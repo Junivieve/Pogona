@@ -70,6 +70,11 @@ function playerStateFall(_event, _layer) {
 		break;
 		
 		case TrueStateEvent.onStep:
+		
+			if(onAWall != 0) {
+				_layer.stateSwitch(PLAYERSTATE.ONWALL);	
+			}
+		
 			if(image_index >= 3) {
 				image_index = 3;
 				image_speed = 0;	
@@ -78,6 +83,27 @@ function playerStateFall(_event, _layer) {
 				image_speed = 1;
 				_layer.stateSwitch(PLAYERSTATE.LAND);	
 			}
+		break;
+	}
+}
+
+function playerStateWallJump(_event, _layer) {
+	switch(_event) {
+		case TrueStateEvent.onEnter:
+			dir = onAWall;
+		break
+		
+		case TrueStateEvent.onStep:
+			if(keyJump) {
+				vsp = vspJump;	
+				hsp = -onAWall * hspMove;
+				_layer.stateSwitch(PLAYERSTATE.FALL);
+			}
+		
+			if(place_meeting(x, y+1, oBox)) {
+				image_speed = 1;
+				_layer.stateSwitch(PLAYERSTATE.LAND);	
+			}		
 		break;
 	}
 }

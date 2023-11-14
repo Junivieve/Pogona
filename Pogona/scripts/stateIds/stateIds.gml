@@ -6,5 +6,6 @@ enum PLAYERSTATE {
 	FALL,
 	LAND,
 	HURT,
-	DIE
+	DIE,
+	ONWALL
 }
