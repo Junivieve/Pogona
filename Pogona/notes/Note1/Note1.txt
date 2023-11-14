@@ -1,0 +1,7 @@
+little dragon.
+
+throw scales, they act as bullets. <-- default
+act as platforms <-- ability 1
+if they dont hit anything, then return. <-- ability 2
+
+find scale collectables to grow your max scales <-- exploring incentive!

@@ -1,0 +1,10 @@
+enum PLAYERSTATE {
+	IDLE,
+	RUN,
+	SHOOT,
+	JUMP,
+	FALL,
+	LAND,
+	HURT,
+	DIE
+}
