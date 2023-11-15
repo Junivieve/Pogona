@@ -1,3 +1,34 @@
+function playerStateEgg(_event, _layer) {
+	switch(_event) {
+		case TrueStateEvent.onEnter:
+			sprite_index = sDragonEggHatch;
+			image_speed = 0;
+		break;
+		
+		case TrueStateEvent.onStep:
+		
+			if(keyboard_check_pressed(vk_anykey)) {
+				_layer.stateSwitch(PLAYERSTATE.HATCH);	
+			}
+		break;
+	}
+}
+function playerStateHatch(_event, _layer) {
+	switch(_event) {
+		case TrueStateEvent.onEnter:
+			sprite_index = sDragonEggHatch;
+			image_speed = 1;
+		break;
+		
+		case TrueStateEvent.onStep:
+		var _hatched = AnimationEnd();
+			if(_hatched) {
+				instance_create_layer(x, y, "Instances", oEgg);
+				_layer.stateSwitch(PLAYERSTATE.IDLE);	
+			}
+		break;
+	}
+}
 function playerStateIdle(_event, _layer) {
 	switch(_event) {
 		case TrueStateEvent.onEnter:
@@ -7,13 +38,18 @@ function playerStateIdle(_event, _layer) {
 		case TrueStateEvent.onStep:
 			if (place_meeting(x,y+1,oBox)) {
 				canJump = 10;
+				if(hsp != 0) {
+					_layer.stateSwitch(PLAYERSTATE.RUN);	
+				}
 			}
-			if (canJump > 0) && (keyJump)
-			{
-			    vsp = vspJump;
-				_layer.stateSwitch(PLAYERSTATE.FALL);
-				randomize();
-				audio_play_sound(choose(mJump1, mJump2, mJump3, mJump4, mJump5, mJump6), 1, false);
+			if (canJump > 0) {
+				if(keyJump or jumpBuffer > 0) {
+					vsp = vspJump;
+					jumpBuffer = 0;
+					_layer.stateSwitch(PLAYERSTATE.FALL);
+					randomize();
+						audio_play_sound(choose(mJump1, mJump2, mJump3, mJump4, mJump5, mJump6), 1, false);
+				}
 			}
 
 			if(keyShoot) {
@@ -46,7 +82,6 @@ function playerStateShoot(_event, _layer) {
 		break;
 	}
 }
-
 function playerStateLand(_event, _layer) {
 	switch(_event) {
 		case TrueStateEvent.onEnter:
@@ -62,7 +97,6 @@ function playerStateLand(_event, _layer) {
 		break;
 	}	
 }
-
 function playerStateFall(_event, _layer) {
 	switch(_event) {
 		case TrueStateEvent.onEnter:
@@ -70,7 +104,9 @@ function playerStateFall(_event, _layer) {
 		break;
 		
 		case TrueStateEvent.onStep:
-		
+			if(keyJump && jumpBuffer < 1) {
+				jumpBuffer ++;	
+			}
 			if(onAWall != 0) {
 				_layer.stateSwitch(PLAYERSTATE.ONWALL);	
 			}
@@ -86,7 +122,6 @@ function playerStateFall(_event, _layer) {
 		break;
 	}
 }
-
 function playerStateWallJump(_event, _layer) {
 	switch(_event) {
 		case TrueStateEvent.onEnter:
@@ -104,6 +139,33 @@ function playerStateWallJump(_event, _layer) {
 				image_speed = 1;
 				_layer.stateSwitch(PLAYERSTATE.LAND);	
 			}		
+		break;
+	}
+}
+function playerStateRun(_event, _layer) {
+	switch(_event) {
+		case TrueStateEvent.onEnter:
+			sprite_index = sDragonRun;
+		break;
+		
+		case TrueStateEvent.onStep:
+			if (place_meeting(x,y+1,oBox)) {
+				canJump = 10;
+				if(hsp == 0) {
+					_layer.stateSwitch(PLAYERSTATE.IDLE);	
+				}
+			} else {
+				_layer.stateSwitch(PLAYERSTATE.FALL);	
+			}
+			if (canJump > 0) {
+				if(keyJump or jumpBuffer > 0) {
+					vsp = vspJump;
+					jumpBuffer = 0;
+					_layer.stateSwitch(PLAYERSTATE.FALL);
+					randomize();
+						audio_play_sound(choose(mJump1, mJump2, mJump3, mJump4, mJump5, mJump6), 1, false);
+				}
+			}	
 		break;
 	}
 }

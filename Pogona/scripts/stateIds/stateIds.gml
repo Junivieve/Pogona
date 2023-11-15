@@ -1,4 +1,6 @@
 enum PLAYERSTATE {
+	EGG,
+	HATCH,
 	IDLE,
 	RUN,
 	SHOOT,

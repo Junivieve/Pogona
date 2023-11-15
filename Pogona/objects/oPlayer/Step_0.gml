@@ -1,27 +1,26 @@
-inputs(); // updates inputs.
+fsm.event(TrueStateEvent.onStep);
+if(fsm.current.id != PLAYERSTATE.EGG && fsm.current.id != PLAYERSTATE.HATCH) {
+	inputs(); // updates inputs.
+	//Work out where to move horizontally
+	hspMove = approach(hspMove, (keyRight-keyLeft) * hspWalk, 0.5);
+	hsp = hspMove;
+}
 
-//Work out where to move horizontally
-hspMove = approach(hspMove, (keyRight-keyLeft) * hspWalk, 0.5);
-hsp = hspMove;
- 
 //Work out where to move vertically
 if(onAWall != 0) {
 	vsp = min(vsp+grv, 0.8);	
 } else {
 	vsp += grv;
 }
- 
+
 //Jumping
 canJump-=1;
-mvtLocked = max(mvtLocked-1, 0);
 if(hsp != 0) {
 	dir = sign(hsp);	
 }
 
 onTheGround = place_meeting(x, y + 1, oBox);
 onAWall = place_meeting(x-5, y, oBox) - place_meeting(x+5, y, oBox);
-
-fsm.event(TrueStateEvent.onStep);
 
 //Horizontal move & collide
 #region //Collide and move
