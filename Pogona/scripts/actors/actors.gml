@@ -1,0 +1,3 @@
+enum ACTOR_ID {
+	CRICKET	
+}
