@@ -1,6 +1,6 @@
 if(place_meeting(x, y, oPlayer)) {
 	if(myTextBox == noone) {
-		myTextBox = instance_create_layer(x, y, "Text", oDialogue);
+		myTextBox = instance_create_layer(dialogue.defaultX, dialogue.defaultY, "Text", oDialogue);
 		myTextBox.text = dialogue.textArray[dialogue.currentPos];
 	}
 } else {
