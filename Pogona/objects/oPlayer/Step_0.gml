@@ -20,7 +20,7 @@ if(hsp != 0) {
 }
 
 onTheGround = place_meeting(x, y + 1, oBox);
-onAWall = place_meeting(x-5, y, oBox) - place_meeting(x+5, y, oBox);
+//onAWall = place_meeting(x-5, y, oBox) - place_meeting(x+5, y, oBox);
 
 //Horizontal move & collide
 #region //Collide and move
@@ -46,4 +46,3 @@ if (place_meeting(x,y+vsp,oBox))
 }
 y = y + vsp;
 #endregion
-

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sDustParticle",
-  "bbox_bottom": 9,
+  "bbox_bottom": 4,
   "bbox_left": 0,
-  "bbox_right": 9,
+  "bbox_right": 4,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -22,7 +22,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 12,
+  "height": 6,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a9037e04-26a3-4cd8-8f10-c57f466e9306","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -80,5 +80,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 12,
+  "width": 6,
 }

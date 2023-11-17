@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 9.339025,
   "parent": {
-    "name": "Pogona",
-    "path": "Pogona.yyp",
+    "name": "Audio",
+    "path": "folders/Audio.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -17,6 +17,8 @@ walkSoundTime = 1;
 mvtLocked = 0;
 jumpBuffer = 0;
 
+mask_index = sCol;
+
 fsm = use_truestate();
 fsm.addState(PLAYERSTATE.EGG, playerStateEgg, "playerEgg");
 fsm.addState(PLAYERSTATE.HATCH, playerStateHatch, "playerHatch");
@@ -26,6 +28,7 @@ fsm.addState(PLAYERSTATE.FALL, playerStateFall, "PlayerFall");
 fsm.addState(PLAYERSTATE.LAND, playerStateLand, "PlayerLand");
 fsm.addState(PLAYERSTATE.ONWALL, playerStateWallJump, "PlayerOnWall");
 fsm.addState(PLAYERSTATE.RUN, playerStateRun, "PlayerRun");
+fsm.addState(PLAYERSTATE.JUMP, playerStateJump, "PlayerJump");
 
 keyRight = keyboard_check(vk_right);
 keyLeft = keyboard_check(vk_left);
