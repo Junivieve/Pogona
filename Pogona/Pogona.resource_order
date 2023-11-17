@@ -255,6 +255,7 @@
     {"name":"input_check_released","order":4,"path":"scripts/input_check_released/input_check_released.yy",},
     {"name":"__scribble_get_generator_state","order":9,"path":"scripts/__scribble_get_generator_state/__scribble_get_generator_state.yy",},
     {"name":"red_sliderUp","order":123,"path":"sprites/red_sliderUp/red_sliderUp.yy",},
+    {"name":"sLvl","order":37,"path":"sprites/sLvl/sLvl.yy",},
     {"name":"__scribble_class_model","order":3,"path":"scripts/__scribble_class_model/__scribble_class_model.yy",},
     {"name":"green_boxCheckmark","order":33,"path":"sprites/green_boxCheckmark/green_boxCheckmark.yy",},
     {"name":"oSlope","order":5,"path":"objects/oSlope/oSlope.yy",},
