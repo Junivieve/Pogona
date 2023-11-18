@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sDragonShoot",
-    "path": "sprites/sDragonShoot/sDragonShoot.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

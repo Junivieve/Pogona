@@ -67,13 +67,13 @@ function playerStateShoot(_event, _layer) {
 	switch(_event) {
 		case TrueStateEvent.onEnter:
 			sprite_index = sDragonShoot;
-			var _scale = instance_create_layer(x, y-5, "Instances", oScale);
+			var _scale = instance_create_layer(x, y-10, "Instances", oScale);
 			_scale.dir = dir;
 			scales --;
 		break;
 		
 		case TrueStateEvent.onStep:
-			if(_layer.timer > 12) {
+			if(_layer.timer > 14) {
 				if(!place_meeting(x,y+1,oBox)) {
 					//_layer.stateSwitch(PLAYERSTATE.FALL);
 				} else {
@@ -124,6 +124,9 @@ function playerStateFall(_event, _layer) {
 			} else {
 				hspWalk = 2.2;
 			}
+			if(keyShoot) {
+				_layer.stateSwitch(PLAYERSTATE.SHOOT);
+			}	
 		break;
 	}
 }
@@ -169,6 +172,9 @@ function playerStateRun(_event, _layer) {
 						audio_play_sound(choose(mJump1, mJump2, mJump3, mJump4, mJump5, mJump6), 1, false);
 				}
 			}	
+			if(keyShoot) {
+				_layer.stateSwitch(PLAYERSTATE.SHOOT);
+			}	
 		break;
 	}
 }
@@ -180,6 +186,9 @@ function playerStateJump(_event, _layer) {
 		break;
 		
 		case TrueStateEvent.onStep:
+			if(keyShoot) {
+				_layer.stateSwitch(PLAYERSTATE.SHOOT);
+			}
 			if(_layer.timer > 18) {
 				_layer.stateSwitch(PLAYERSTATE.FALL);	
 			}
