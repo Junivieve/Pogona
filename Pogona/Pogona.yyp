@@ -518,6 +518,7 @@
     {"id":{"name":"__input_gamepad_set_vid_pid","path":"scripts/__input_gamepad_set_vid_pid/__input_gamepad_set_vid_pid.yy",},},
     {"id":{"name":"input_bindings_read","path":"scripts/input_bindings_read/input_bindings_read.yy",},},
     {"id":{"name":"green_button06","path":"sprites/green_button06/green_button06.yy",},},
+    {"id":{"name":"Sprite183","path":"sprites/Sprite183/Sprite183.yy",},},
     {"id":{"name":"red_tick","path":"sprites/red_tick/red_tick.yy",},},
     {"id":{"name":"input_x","path":"scripts/input_x/input_x.yy",},},
     {"id":{"name":"input_player_source_get","path":"scripts/input_player_source_get/input_player_source_get.yy",},},

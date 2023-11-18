@@ -465,6 +465,7 @@
     {"name":"__input_gamepad_set_vid_pid","order":12,"path":"scripts/__input_gamepad_set_vid_pid/__input_gamepad_set_vid_pid.yy",},
     {"name":"input_bindings_read","order":2,"path":"scripts/input_bindings_read/input_bindings_read.yy",},
     {"name":"green_button06","order":42,"path":"sprites/green_button06/green_button06.yy",},
+    {"name":"Sprite183","order":27,"path":"sprites/Sprite183/Sprite183.yy",},
     {"name":"red_tick","order":124,"path":"sprites/red_tick/red_tick.yy",},
     {"name":"input_x","order":2,"path":"scripts/input_x/input_x.yy",},
     {"name":"input_player_source_get","order":2,"path":"scripts/input_player_source_get/input_player_source_get.yy",},
