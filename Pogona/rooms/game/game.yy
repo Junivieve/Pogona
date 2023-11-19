@@ -21,6 +21,7 @@
     {"name":"inst_42A6935C","path":"rooms/game/game.yy",},
     {"name":"inst_40468A2A","path":"rooms/game/game.yy",},
     {"name":"inst_4722B25B","path":"rooms/game/game.yy",},
+    {"name":"inst_60E5AA9F","path":"rooms/game/game.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -34,6 +35,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29F6E202","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oRecorder","path":"objects/oRecorder/oRecorder.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":88.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_698B2BF0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":48.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28F18EA6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCricket","path":"objects/oCricket/oCricket.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":432.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_60E5AA9F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCrystal","path":"objects/oCrystal/oCrystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":824.0,"y":392.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Boxes","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4399FE7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBox","path":"objects/oBox/oBox.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":22.0,"x":80.0,"y":96.0,},
