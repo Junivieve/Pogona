@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sDragonIdle",
+    "path": "sprites/sDragonIdle/sDragonIdle.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
