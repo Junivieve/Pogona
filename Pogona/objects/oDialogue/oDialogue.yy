@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pogona",
-    "path": "Pogona.yyp",
+    "name": "WTF",
+    "path": "folders/WTF.yy",
   },
   "parentObjectId": null,
   "persistent": false,

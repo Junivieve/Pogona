@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Pogona",
-    "path": "Pogona.yyp",
+    "name": "WTF",
+    "path": "folders/WTF.yy",
   },
 }

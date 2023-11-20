@@ -68,8 +68,8 @@
 -19,0,-13,1,-6,0,-13,1,-18,0,-45,1,-18,0,-15,1,-3,0,-15,1,-17,0,-46,1,-17,0,-34,1,-16,0,-46,1,-18,0,-36,1,-12,0,-48,1,-17,0,-97,1,-16,0,-99,1,-14,0,-104,1,-10,0,-1087,1,],"TileDataFormat":1,},"tilesetId":null,"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Pogona",
-    "path": "Pogona.yyp",
+    "name": "WTF",
+    "path": "folders/WTF.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

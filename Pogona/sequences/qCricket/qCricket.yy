@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Pogona",
-    "path": "Pogona.yyp",
+    "name": "WTF",
+    "path": "folders/WTF.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,
