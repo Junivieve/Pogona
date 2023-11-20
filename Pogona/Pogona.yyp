@@ -557,9 +557,9 @@
     {"id":{"name":"sScale","path":"sprites/sScale/sScale.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"Lvl1Faro","path":"rooms/Lvl1Faro/Lvl1Faro.yy",},},
     {"roomId":{"name":"game","path":"rooms/game/game.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
-    {"roomId":{"name":"Lvl1Faro","path":"rooms/Lvl1Faro/Lvl1Faro.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
