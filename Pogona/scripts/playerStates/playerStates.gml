@@ -39,6 +39,7 @@ function playerStateIdle(_event, _layer) {
 		case TrueStateEvent.onStep:
 			if (place_meeting(x,y+1,oBox)) {
 				canJump = 10;
+				canDash = true;
 				if(hsp != 0) {
 					_layer.stateSwitch(PLAYERSTATE.RUN);	
 				}
@@ -56,6 +57,10 @@ function playerStateIdle(_event, _layer) {
 			if(keyShoot) {
 				_layer.stateSwitch(PLAYERSTATE.SHOOT);
 			}		
+			
+			if(keyDash && canDash) {
+				fsm.stateSwitch(PLAYERSTATE.DASH);
+			}
 		break;
 		
 		case TrueStateEvent.onDraw:
@@ -127,6 +132,9 @@ function playerStateFall(_event, _layer) {
 			if(keyShoot) {
 				_layer.stateSwitch(PLAYERSTATE.SHOOT);
 			}	
+			if(keyDash && canDash) {
+				fsm.stateSwitch(PLAYERSTATE.DASH);
+			}
 		break;
 	}
 }
@@ -191,6 +199,53 @@ function playerStateJump(_event, _layer) {
 			}
 			if(_layer.timer > 18) {
 				_layer.stateSwitch(PLAYERSTATE.FALL);	
+			}
+			if(keyDash && canDash) {
+				fsm.stateSwitch(PLAYERSTATE.DASH);
+			}
+		break;
+	}
+}
+function playerStateLedge(_event, _layer) {
+	switch(_event) {
+		case TrueStateEvent.onEnter:
+			sprite_index = sDragonGrab;
+			image_speed = 0;
+			image_index = 1;
+		break;
+		
+		case TrueStateEvent.onStep:
+			if(keyJump) {
+				image_speed = 1;
+				vsp = vspJump;
+				if(image_index >= image_number-1) {
+					_layer.stateSwitch(PLAYERSTATE.JUMP);
+				}
+			}
+		break;
+	}
+}
+function playerStateDash(_event, _layer) {
+	switch(_event) {
+		case TrueStateEvent.onEnter:
+			sprite_index = sDragonIdle;
+			canDash = false;
+			canJump = 0;
+			dashDirection = point_direction(0, 0, keyRight-keyLeft, keyDown-keyJump);
+			dashSp = dashDist/dashTime;
+			dashEnergy = dashDist;
+		break;
+		
+		case TrueStateEvent.onStep:
+			hsp = lengthdir_x(dashSp, dashDirection);
+			vsp = lengthdir_y(dashSp, dashDirection);
+			
+			dashEnergy -= dashSp;
+			
+			if(dashEnergy <= 0) {
+				vsp = 0;
+				hsp = 0;
+				_layer.stateSwitch(PLAYERSTATE.FALL);
 			}
 		break;
 	}

@@ -9,5 +9,7 @@ enum PLAYERSTATE {
 	LAND,
 	HURT,
 	DIE,
-	ONWALL
+	ONWALL,
+	LEDGE,
+	DASH
 }
