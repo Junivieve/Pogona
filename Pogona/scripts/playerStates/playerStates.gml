@@ -147,7 +147,7 @@ function playerStateWallJump(_event, _layer) {
 		case TrueStateEvent.onStep:
 			if(keyJump) {
 				vsp = vspJump;	
-				hsp = -onAWall * hspMove;
+				hsp = onAWall * hspMove;
 				_layer.stateSwitch(PLAYERSTATE.FALL);
 			}
 		

@@ -20,7 +20,7 @@ if(hsp != 0) {
 }
 
 onTheGround = place_meeting(x, y + 1, oBox);
-//onAWall = place_meeting(x-5, y, oBox) - place_meeting(x+5, y, oBox);
+onAWall = place_meeting(x-5, y, oBox) - place_meeting(x+5, y, oBox);
 var _atLedge = false;
 
 //Horizontal move & collide
