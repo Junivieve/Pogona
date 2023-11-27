@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Scribble 8.7",
-    "path": "folders/gooey/Dependencies/Scribble 8.7.yy",
+    "path": "folders/PLUTOH/LIBS/gooey/Dependencies/Scribble 8.7.yy",
   },
 }

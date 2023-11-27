@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/gooey/Dependencies/Scribble 8.7/Fonts.yy",
+    "path": "folders/PLUTOH/LIBS/gooey/Dependencies/Scribble 8.7/Fonts.yy",
   },
 }

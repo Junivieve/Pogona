@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Animation",
-    "path": "folders/gooey/Dependencies/Scribble 8.7/Animation.yy",
+    "path": "folders/PLUTOH/LIBS/gooey/Dependencies/Scribble 8.7/Animation.yy",
   },
 }

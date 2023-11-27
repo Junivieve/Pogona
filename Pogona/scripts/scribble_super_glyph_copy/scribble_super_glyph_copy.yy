@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Superfonts",
-    "path": "folders/gooey/Dependencies/Scribble 8.7/Superfonts.yy",
+    "path": "folders/PLUTOH/LIBS/gooey/Dependencies/Scribble 8.7/Superfonts.yy",
   },
 }

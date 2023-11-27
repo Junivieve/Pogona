@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Colours",
-    "path": "folders/gooey/Dependencies/Scribble 8.7/Colours.yy",
+    "path": "folders/PLUTOH/LIBS/gooey/Dependencies/Scribble 8.7/Colours.yy",
   },
 }

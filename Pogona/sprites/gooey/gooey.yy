@@ -49,7 +49,7 @@
   "origin": 0,
   "parent": {
     "name": "gooey",
-    "path": "folders/gooey.yy",
+    "path": "folders/PLUTOH/LIBS/gooey.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

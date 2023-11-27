@@ -49,7 +49,7 @@
   "origin": 0,
   "parent": {
     "name": "Test Sprites - Kenney UI",
-    "path": "folders/gooey/Test Sprites - Kenney UI.yy",
+    "path": "folders/PLUTOH/LIBS/gooey/Test Sprites - Kenney UI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

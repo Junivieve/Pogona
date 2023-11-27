@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Internal",
-    "path": "folders/gooey/Internal.yy",
+    "path": "folders/PLUTOH/LIBS/gooey/Internal.yy",
   },
 }
