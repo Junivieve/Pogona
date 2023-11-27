@@ -1,5 +1,5 @@
 /// @desc Move to next room
 
 with (oPlayer) {
-	SlideTransition(TRANS_MODE.GOTO, oTransition.target);
+	SlideTransition(TRANS_MODE.GOTO);
 }
