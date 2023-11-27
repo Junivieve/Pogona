@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sBird",
+    "path": "sprites/sBird/sBird.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
