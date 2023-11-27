@@ -8,7 +8,7 @@ enum CAMERA_MODE {
 
 cam = view_camera[0];
 mode = CAMERA_MODE.MOVE_TO_FOLLOW_TARGET;
-following = oPlayer;
+following = oPogo;
 targetX = 1262;
 targetY = 109;
 free = false;
