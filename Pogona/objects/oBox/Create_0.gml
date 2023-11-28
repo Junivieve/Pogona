@@ -1,7 +1,0 @@
-enum GROUNDTYPE {
-	GRASS,
-	STONE,
-	SCALE
-}
-
-ground = GROUNDTYPE.GRASS;

@@ -168,10 +168,13 @@ if state=STATE_WALLSLIDE{//wall slide
 	
 	var _climb=inputVert()//check for the player holding up
 	if _climb <0 and stamina>0{//if we have stamina and are holding up
-		vspd=_climb//climb up
-		stamina--//reduce stamina
-		stateTimer=0//reset falling speed
-		spriteSet(spriteWallClimb)//sprite
+		var _dir = sign(image_xscale);
+		if(place_meeting(x+_dir, y, oClimb)) {
+			vspd=_climb//climb up
+			stamina--//reduce stamina
+			stateTimer=0//reset falling speed
+			spriteSet(spriteWallClimb)//sprite
+		}
 	}else{
 		spriteSet(spriteWallSlide)//sprite
 		if stamina<=0{spriteSet(spriteWallSlideSad)}//we ran out of stamina
