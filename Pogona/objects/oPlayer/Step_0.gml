@@ -59,3 +59,5 @@ if(_atLedge && _ledgeAboveOrBelow != sign(oPlayer.bbox_top-_horiWall.bbox_top)) 
 	fsm.stateSwitch(PLAYERSTATE.LEDGE);
 }
 #endregion
+
+

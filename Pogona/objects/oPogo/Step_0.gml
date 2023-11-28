@@ -281,3 +281,5 @@ if stamina<=0{
 #endregion
 
 pixelMovement(hspd,vspd)//move the character across the screen
+
+show_debug_message(image_index);
