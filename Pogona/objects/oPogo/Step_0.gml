@@ -180,7 +180,7 @@ if state=STATE_WALLSLIDE{//wall slide
 		if stamina<=0{spriteSet(spriteWallSlideSad)}//we ran out of stamina
 	}	
 	
-	if inputAction(){jumpOffWall()}//wall jump
+	//if inputAction(){jumpOffWall()}//wall jump
 	
 	if !meetingWall(x+(image_xscale),y){stateSet(STATE_FALL)}//climbing over the top of a wall
 	
