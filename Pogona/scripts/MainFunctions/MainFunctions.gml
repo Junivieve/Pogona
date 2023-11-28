@@ -161,8 +161,8 @@ function inputSides(){//returns -1 or 1 for players horizontal input
 	var _gp=gamepad_axis_value(0,gp_axislh);
 	var _axis=0;
 
-	_axis+=keyboard_check(vk_right);
-	_axis-=keyboard_check(vk_left);
+	_axis+=keyboard_check(ord("D"));
+	_axis-=keyboard_check(ord("A"));
 	
 	if abs(_gp)>0.5{_axis=sign(_gp)}
 
@@ -174,8 +174,8 @@ function inputVert(){//returns -1 or 1 for players vertical input
 	var _gp=gamepad_axis_value(0,gp_axislv);
 	var _axis=0;
 
-	_axis+=keyboard_check(vk_down);
-	_axis-=keyboard_check(vk_up);
+	_axis+=keyboard_check(ord("S"));
+	_axis-=keyboard_check(ord("W"));
 	
 	if abs(_gp)>0.5{_axis=sign(_gp)}
 
