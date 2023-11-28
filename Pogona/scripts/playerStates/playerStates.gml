@@ -71,10 +71,7 @@ function playerStateIdle(_event, _layer) {
 function playerStateShoot(_event, _layer) {
 	switch(_event) {
 		case TrueStateEvent.onEnter:
-			sprite_index = sDragonShoot;
-			var _scale = instance_create_layer(x, y-10, "Instances", oScale);
-			_scale.dir = dir;
-			scales --;
+
 		break;
 		
 		case TrueStateEvent.onStep:

@@ -251,8 +251,25 @@ if state=STATE_DUCK{//ducking
 	if _grounded{hspd=hspd*0.5 vspd=0}//friction
 	//this state has no use currently, it just makes the cat duck :D
 }
+
+if state = STATE_SHOOT {
+	spriteSet(spriteShoot);
+	if(scales > 0) {
+		var _scale = instance_create_layer(x, y-10, "Instances", oScale);
+		_scale.dir = sign(image_xscale);
+		scales --;	
+	}
+	
+	if(image_index >= image_number-1) {
+		stateSet(STATE_IDLE);	
+	}
+}
 #endregion
 
+
+if(inputShoot()) {
+	state = STATE_SHOOT;	
+}
 //out of stamina effect
 #region stamina effect
 if stamina<=0{

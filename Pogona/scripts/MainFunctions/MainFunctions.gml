@@ -10,6 +10,7 @@
 #macro STATE_HURT 7
 #macro STATE_DEAD 8
 #macro STATE_DUCK 9
+#macro STATE_SHOOT 10
 #endregion
 
 function stateSet(_state){//simple state machine handler
@@ -93,7 +94,7 @@ function setSpritesFromDash(){//set the players sprites based on dashes
 		spriteHurt=sPogo_hurt_12fps
 		spriteDead=sPogo_die_12fps
 		spriteDuck=sPogo_crouch_8fps
-		
+		spriteShoot=sDragonShoot;
 	 }
 	 
 	 if dashes=0{
@@ -112,6 +113,7 @@ function setSpritesFromDash(){//set the players sprites based on dashes
 		spriteHurt=sPogo_hurt_12fps
 		spriteDead=sPogo_die_12fps
 		spriteDuck=sPogo_crouch_8fps
+		spriteShoot=sDragonShoot;
 	 }
 	 
 }
@@ -133,6 +135,22 @@ function inputAction(){//returns if the player pressed the action button
 
 function inputActionReleased(){//returns if the player released the action button
 	if keyboard_check_released(vk_space) or gamepad_button_check_released(0,gp_face1){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+function inputShoot(){//returns if the player pressed the action button
+	if mouse_check_button_pressed(mb_left) or gamepad_button_check_pressed(0,gp_face2){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+function inputShootReleased(){//returns if the player released the action button
+	if mouse_check_button_released(mb_left) or gamepad_button_check_released(0,gp_face2){
 		return true;
 	}else{
 		return false;

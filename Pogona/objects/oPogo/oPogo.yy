@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "bwcat_idle_8fps",
-    "path": "sprites/bwcat_idle_8fps/bwcat_idle_8fps.yy",
+    "name": "sPogo_idle_8fps",
+    "path": "sprites/sPogo_idle_8fps/sPogo_idle_8fps.yy",
   },
   "spriteMaskId": {
     "name": "sPogoMask",
