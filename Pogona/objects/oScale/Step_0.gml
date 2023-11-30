@@ -8,7 +8,7 @@ if(instance_exists(oScalePlatform)) {
 	}
 }
 if(place_meeting(x, y, oBox)) {
-	var _p = instance_create_layer(x-11*dir, y, "Instances", oScalePlatform);
+	var _p = instance_create_layer(x-11*dir, y, "Instances", oScalePlatformSpawn);
 	_p.image_xscale = dir;
 	audio_play_sound(mScaleHitWall, 1, false);
 	instance_destroy();	
