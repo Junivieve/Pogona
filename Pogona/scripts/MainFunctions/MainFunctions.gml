@@ -83,9 +83,9 @@ function setSpritesFromDash(){//set the players sprites based on dashes
 	spriteWait1=sPogoIdle
 	spriteWait2=sPogoIdle
 	spriteWait3=sPogoIdle
-	spriteWalk=sPogoWalk
+	spriteWalk=sPogoRun
 	spriteJump=sPogoJump
-	spriteFall=sPogoFalling
+	spriteFall=sPogo_fall_12fps
 	spriteWallSlide=sPogo_wallgrab_8fps
 	spriteWallSlideSad=sPogo_wallgrabSad_8fps
 	spriteWallClimb=sPogoClimb

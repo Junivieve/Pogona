@@ -407,6 +407,7 @@
     {"id":{"name":"actors","path":"scripts/actors/actors.yy",},},
     {"id":{"name":"grey_button12","path":"sprites/grey_button12/grey_button12.yy",},},
     {"id":{"name":"oMushroom","path":"objects/oMushroom/oMushroom.yy",},},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"mJump5","path":"sounds/mJump5/mJump5.yy",},},
     {"id":{"name":"input_bindings_copy","path":"scripts/input_bindings_copy/input_bindings_copy.yy",},},
     {"id":{"name":"input_gamepad_get_button_label","path":"scripts/input_gamepad_get_button_label/input_gamepad_get_button_label.yy",},},
@@ -639,6 +640,7 @@
     {"id":{"name":"sScale","path":"sprites/sScale/sScale.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"Lvl3Faro","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},},
     {"roomId":{"name":"Lvl2Faro","path":"rooms/Lvl2Faro/Lvl2Faro.yy",},},
     {"roomId":{"name":"Lvl1Faro","path":"rooms/Lvl1Faro/Lvl1Faro.yy",},},
