@@ -51,6 +51,21 @@ function jumpOffWall(){//wall jumpping
 }
 
 function pixelMovement(h,v){//pixel perfect movement
+	// moving platform
+	var _mp = instance_place(x, y+max(1, v), oMovingPlatform);
+	if(_mp && bbox_bottom <= _mp.bbox_top) {
+		if(v > 0) {
+			while(!place_meeting(x, y + sign(v), oMovingPlatform)) {
+				y += sign(v);
+			}	
+			
+			v = 0;
+		}
+		
+		x += _mp.hspd;
+		y += _mp.vspd;
+	}
+	
 	if meetingWall(x+h,y) and h != 0 {
 	    repeat(abs(h)){
 	        if meetingWall(x+sign(h),y)=false{
