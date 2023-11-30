@@ -9,9 +9,9 @@ jumpPower=3.25//how high we jump
 jumpsMax=1//how many jumps we have (does not do anything with values > 1 yet)
 dashesMax=1//how many air dashes we have (does not do anything with values > 1 yet)
 coyoteTimeMax=5//how many frames late can we jump, when falling off a ledge
-staminaMax=60//how many frames can we climb up walls
+staminaMax=2000//how many frames can we climb up walls
 grav=0.15//gravity
-scales = 1;
+scales = 3;
 //various movement variables
 dashXX=1//used for aiming the air dash
 dashYY=0//used for aiming the air dash
