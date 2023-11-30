@@ -17,7 +17,7 @@ dashXX=1//used for aiming the air dash
 dashYY=0//used for aiming the air dash
 hspd=0//horizontal movement speed
 vspd=0//vertical movement speed
-
+checkpoint = noone;
 //timers
 noFallTimer=0//after an air dash, the player has no gravity for several frames
 idleTimer=0//counts how long we have been idle for, used to set idle animations

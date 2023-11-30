@@ -255,7 +255,7 @@ if state=STATE_DUCK{//ducking
 if state = STATE_SHOOT {
 	spriteSet(spriteShoot);
 	if(scales > 0) {
-		var _scale = instance_create_layer(x, y-10, "Instances", oScale);
+		var _scale = instance_create_layer(x, y-3, "Instances", oScale);
 		_scale.dir = sign(image_xscale);
 		scales --;	
 	}

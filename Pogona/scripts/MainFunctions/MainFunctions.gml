@@ -78,44 +78,22 @@ function pixelMovement(h,v){//pixel perfect movement
 }
 	
 function setSpritesFromDash(){//set the players sprites based on dashes
-	 if dashes=1{
-		spriteIdle=sPogo_idle_8fps
-		spriteIdleBlink=sPogo_idle_blink_8fps
-		spriteWait1=sPogo_sit_8fps
-		spriteWait2=sPogo_liedown_8fps
-		spriteWait3=sPogo_fright_12fps
-		spriteWalk=sPogo_run_12fps
-		spriteJump=sPogo_jump_12fps
-		spriteFall=sPogo_fall_12fps
-		spriteWallSlide=sPogo_wallgrab_8fps
-		spriteWallSlideSad=sPogo_wallgrabSad_8fps
-		spriteWallClimb=sPogo_wallclimb_8fps
-		spriteDash=sPogo_dash_12fps
-		spriteHurt=sPogo_hurt_12fps
-		spriteDead=sPogo_die_12fps
-		spriteDuck=sPogo_crouch_8fps
-		spriteShoot=sDragonShoot;
-	 }
-	 
-	 if dashes=0{
-		spriteIdle=sPogo_idle_8fps
-		spriteIdleBlink=sPogo_idle_blink_8fps
-		spriteWait1=sPogo_sit_8fps
-		spriteWait2=sPogo_liedown_8fps
-		spriteWait3=sPogo_fright_12fps
-		spriteWalk=sPogo_run_12fps
-		spriteJump=sPogo_jump_12fps
-		spriteFall=sPogo_fall_12fps
-		spriteWallSlide=sPogo_wallgrab_8fps
-		spriteWallSlideSad=sPogo_wallgrabSad_8fps
-		spriteWallClimb=sPogo_wallclimb_8fps
-		spriteDash=sPogo_dash_12fps
-		spriteHurt=sPogo_hurt_12fps
-		spriteDead=sPogo_die_12fps
-		spriteDuck=sPogo_crouch_8fps
-		spriteShoot=sDragonShoot;
-	 }
-	 
+	spriteIdle=sPogoIdle
+	spriteIdleBlink=sPogoIdle
+	spriteWait1=sPogoIdle
+	spriteWait2=sPogoIdle
+	spriteWait3=sPogoIdle
+	spriteWalk=sPogoWalk
+	spriteJump=sPogoJump
+	spriteFall=sPogoFalling
+	spriteWallSlide=sPogo_wallgrab_8fps
+	spriteWallSlideSad=sPogo_wallgrabSad_8fps
+	spriteWallClimb=sPogoClimb
+	spriteDash=sPogo_dash_12fps
+	spriteHurt=sPogo_hurt_12fps
+	spriteDead=sPogo_die_12fps
+	spriteDuck=sPogo_crouch_8fps
+	spriteShoot=sPogoShoot; 
 }
 	
 function resetStats(){//resets the players coyote time, jump, dashes, and stamina

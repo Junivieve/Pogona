@@ -66,9 +66,24 @@ if (shake)
    } 
 }
 camera_set_view_pos(cam, cx, cy);
-if(layer_exists("Background")) {
-	layer_x("Background", x);	
+
+if(layer_exists("gems")) {
+	var _layID = layer_get_id("gems");
+	layer_x(_layID, cx/1.5);	
 }
-if(layer_exists("Tiles_2")) {
-	layer_x("Tiles_2", x/4);	
+if(layer_exists("roof1")) {
+	var _layID = layer_get_id("roof1");
+	layer_x(_layID, cx/2);	
+}
+if(layer_exists("roof2")) {
+	var _layID = layer_get_id("roof2");
+	layer_x(_layID, cx/2.5);	
+}
+if(layer_exists("roof3")) {
+	var _layID = layer_get_id("roof3");
+	layer_x(_layID, cx/3);	
+}
+if(layer_exists("platforms")) {
+	var _layID = layer_get_id("platforms");
+	layer_x(_layID, cx/3.5);	
 }
