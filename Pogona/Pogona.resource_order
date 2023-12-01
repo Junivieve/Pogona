@@ -169,7 +169,6 @@
     {"name":"blue_tick","order":27,"path":"sprites/blue_tick/blue_tick.yy",},
     {"name":"grey_button00","order":67,"path":"sprites/grey_button00/grey_button00.yy",},
     {"name":"sndSpring2","order":6,"path":"sounds/sndSpring2/sndSpring2.yy",},
-    {"name":"Lvl3Faro","order":2,"path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"grey_checkmarkGrey","order":83,"path":"sprites/grey_checkmarkGrey/grey_checkmarkGrey.yy",},
     {"name":"red_button08","order":110,"path":"sprites/red_button08/red_button08.yy",},
     {"name":"stateIds","order":21,"path":"scripts/stateIds/stateIds.yy",},
