@@ -11,7 +11,6 @@
     {"name":"inst_27BB92BD_1","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_654B2F1E_1","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_75A29398_1","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
-    {"name":"inst_789B3612_1","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_2A044BE8_1","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_53707A48_1","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_1AC5B5D3","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
@@ -431,6 +430,7 @@
     {"name":"inst_40AA500","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_14BC9965","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_470347AE","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
+    {"name":"inst_376C9911","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -851,7 +851,7 @@
 13,-17,-2147483648,1,11,-104,12,1,13,-19,-2147483648,-3,0,-28,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,1,13,-50,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,1,45,-35,3,1,5,-14,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,-35,41,1,13,-5,-2147483648,5,1,2,3,4,5,-5,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,-35,41,1,13,-6,-2147483648,3,11,12,13,-6,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,-35,41,1,13,-6,-2147483648,3,20,21,22,-6,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,1,19,-34,21,1,22,-15,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,1,13,-50,-2147483648,1,11,-8,12,1,13,-17,-2147483648,1,11,-104,12,1,13,-50,-2147483648,1,11,-8,12,1,13,
 -17,-2147483648,1,20,-104,21,1,22,-50,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,13,-173,-2147483648,1,11,-8,12,1,24,-173,32,1,26,-4579,12,-2745,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TerrainTileset","path":"tilesets/TerrainTileset/TerrainTileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_789B3612_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"UI","path":"objects/UI/UI.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":352.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_376C9911","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"UI","path":"objects/UI/UI.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":432.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_73B7A533_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oController","path":"objects/oController/oController.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27BB92BD_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oRecorder","path":"objects/oRecorder/oRecorder.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_654B2F1E_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":352.0,},
