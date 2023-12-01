@@ -9,5 +9,5 @@ if(place_meeting(x, y, oPogo)) {
 	audio_play_sound(choose(mItemRecieved1, mItemRecieved2), 1, false);
 	instance_destroy();	
 }
-var _s = oPogo.scales-1 == 0 ? 0 : 1;
+var _s = oPogo.scales-1 <= 0 ? 0 : 1;
 oController.scales[_s].setImageAlpha(1);

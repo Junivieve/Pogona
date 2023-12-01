@@ -3,7 +3,7 @@
 //movement settings
 hasDash = false;
 hasClimb = false;
-hasShoot = true;
+hasShoot = false;
 iframe = 0;
 shot = false;
 dashSpeed=4//how fast we move when dashing
@@ -16,7 +16,7 @@ dashesMax=1//how many air dashes we have (does not do anything with values > 1 y
 coyoteTimeMax=5//how many frames late can we jump, when falling off a ledge
 staminaMax=2000//how many frames can we climb up walls
 grav=0.15//gravity
-scales = 2;
+scales = 0;
 canshoot = true;
 //various movement variables
 dashXX=1//used for aiming the air dash
