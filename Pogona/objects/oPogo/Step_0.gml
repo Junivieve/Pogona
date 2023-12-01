@@ -296,6 +296,7 @@ if state = STATE_SHOOT {
 		var _scale = instance_create_layer(x, y-3, "Instances", oScale);
 		_scale.dir = sign(image_xscale);
 		scales --;	
+		oController.scales[array_length(oController.scales)-1].setImageAlpha(0.5);
 		canshoot = false;
 	}
 	

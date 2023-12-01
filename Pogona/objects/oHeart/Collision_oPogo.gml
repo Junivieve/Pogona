@@ -1,0 +1,2 @@
+oPogo.hpmax++;
+oPogo.hp ++;

@@ -56,13 +56,15 @@ switch(state) {
 			movetime = 3;
 		}
 		
-		if(place_meeting(x, y, oPogo)) {
+		if(place_meeting(x, y, oPogo) && oPogo.iframe == 0) {
 			oPogo.hspd += 6 * (-oPogo.image_xscale);
 			oPogo.vspd -= 2;
 			oPogo.state = STATE_HURT;
 			audio_play_sound(mFroghit, 1, false);
 			oPogo.hp --;
-			oPogo.iframe = 0.5;
+			oPogo.iframe = 1;
+			canAttack = false;
+			//state = moving == true ? FROGSTATE.MOVE : FROGSTATE.IDLE;
 		}
 			
 	break;
@@ -82,9 +84,5 @@ switch(state) {
 
 if(hp <= 0) {
 	state = FROGSTATE.DEAD;
-}
-
-if(oPogo.iframe > 0) {
-	canAttack = false;	
 }
 	

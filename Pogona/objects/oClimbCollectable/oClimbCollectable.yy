@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oHeart",
+  "name": "oClimbCollectable",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oPogo","path":"objects/oPogo/oPogo.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sHeart",
-    "path": "sprites/sHeart/sHeart.yy",
+    "name": "sClimbItem",
+    "path": "sprites/sClimbItem/sClimbItem.yy",
   },
   "spriteMaskId": null,
   "visible": true,
