@@ -35,3 +35,15 @@ statePrevious=STATE_IDLE//previous state
 stateSet(STATE_IDLE);//actually setting the state
 setSpritesFromDash()//defines sprites based on how many dashes we have left
 spriteSet(spriteIdle)//finally we set our sprite
+
+if(!audio_is_playing(mCave)) {
+	audio_play_sound(mCave, 1, true);
+}
+
+if(!audio_is_playing(mGameOn)) {
+	audio_play_sound(mGameOn, 1, false);
+}
+
+if(!audio_is_playing(mBGM)) {
+	audio_play_sound(mBGM, 1, true);
+}

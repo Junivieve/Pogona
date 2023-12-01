@@ -43,14 +43,4 @@ keyDash = keyboard_check_pressed(ord("C"));
 onTheGround = 0;
 onAWall = 0;
 
-if(!audio_is_playing(mCave)) {
-	audio_play_sound(mCave, 1, true);
-}
 
-if(!audio_is_playing(mGameOn)) {
-	audio_play_sound(mGameOn, 1, false);
-}
-
-if(!audio_is_playing(mBGM)) {
-	audio_play_sound(mBGM, 1, true);
-}
