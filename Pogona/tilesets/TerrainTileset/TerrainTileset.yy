@@ -8,7 +8,7 @@
     "SerialiseWidth": 0,
     "TileSerialiseData": [],
   },
-  "out_columns": 8,
+  "out_columns": 7,
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
@@ -16,15 +16,15 @@
     "path": "folders/Tilesets.yy",
   },
   "spriteId": {
-    "name": "Terrain",
-    "path": "sprites/Terrain/Terrain.yy",
+    "name": "Sprite178",
+    "path": "sprites/Sprite178/Sprite178.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
-  "tile_count": 63,
+  "tile_count": 54,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -81,15 +81,6 @@
       51,
       52,
       53,
-      54,
-      55,
-      56,
-      57,
-      58,
-      59,
-      60,
-      61,
-      62,
     ],
     "SerialiseFrameCount": 1,
   },
