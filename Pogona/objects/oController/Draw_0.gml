@@ -1,4 +1,5 @@
 if(room != rm_menu) {
+	/*
 	if(!UI.exists("Timer")) {
 		var _panel = new UIPanel("Timer", 32, 32, 500, 48, -1);
 		timerText = _panel.add(new UIText("TimerText", 50, 24, global.timer));
@@ -11,4 +12,5 @@ if(room != rm_menu) {
 		}
 		timerText.setText(string(mins) + ":" + string(global.timer));
 	}
+	*/
 }

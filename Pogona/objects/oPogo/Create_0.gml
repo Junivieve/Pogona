@@ -15,7 +15,7 @@ dashesMax=1//how many air dashes we have (does not do anything with values > 1 y
 coyoteTimeMax=5//how many frames late can we jump, when falling off a ledge
 staminaMax=2000//how many frames can we climb up walls
 grav=0.15//gravity
-scales = 0;
+scales = 2;
 canshoot = true;
 //various movement variables
 dashXX=1//used for aiming the air dash
