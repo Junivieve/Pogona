@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sButton",
-  "bbox_bottom": 29,
+  "bbox_bottom": 28,
   "bbox_left": 0,
   "bbox_right": 29,
   "bbox_top": 0,

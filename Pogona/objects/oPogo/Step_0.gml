@@ -299,11 +299,15 @@ if state = STATE_SHOOT {
 		var _scale = instance_create_layer(x, y-3, "Instances", oScale);
 		_scale.dir = sign(image_xscale);
 		scales --;	
-		oController.scales[scales-1].setImageAlpha(0.5);
+		if(!shot) {
+			oController.scales[scales].setImageAlpha(0.5);
+			shot = true;
+		}
 		canshoot = false;
 	}
 	
 	if(image_index >= image_number-1) {
+		shot = false;
 		stateSet(STATE_IDLE);	
 	}
 }

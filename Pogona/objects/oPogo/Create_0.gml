@@ -3,8 +3,9 @@
 //movement settings
 hasDash = false;
 hasClimb = false;
-hasShoot = false;
+hasShoot = true;
 iframe = 0;
+shot = false;
 dashSpeed=4//how fast we move when dashing
 dashLength=15//how many frames we dash for
 dashPreLength=5//how many frames the game freezes, when you initiate a dash (so the player has time to aim the dash)
