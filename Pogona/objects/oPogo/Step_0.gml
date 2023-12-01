@@ -29,6 +29,13 @@ setSpritesFromDash()//update our sprites based on how many dashes we have left
 
 //STATE MACHINE
 #region state machine
+if state=STATE_EGG{
+	spriteSet(sDragonEggHatch);	
+	if(image_index >= image_number-1) {
+		state = STATE_IDLE;	
+	}
+}
+
 if state=STATE_DEAD{//dead
 	spriteSet(spriteDead)
 	audio_stop_sound(PogonaTheme);

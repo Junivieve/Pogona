@@ -36,9 +36,9 @@ dashes=dashesMax//setting dashes to the value we defined earlier
 coyoteTime=coyoteTimeMax//setting coyote time to the value we defined earlier
 stamina=staminaMax//setting stamina to the value we defined earlier
 tutorial = 0;
-state=STATE_IDLE//the player's state machine
-statePrevious=STATE_IDLE//previous state
-stateSet(STATE_IDLE);//actually setting the state
+state=STATE_EGG//the player's state machine
+statePrevious=STATE_EGG//previous state
+stateSet(STATE_EGG);//actually setting the state
 setSpritesFromDash()//defines sprites based on how many dashes we have left
 spriteSet(spriteIdle)//finally we set our sprite
 

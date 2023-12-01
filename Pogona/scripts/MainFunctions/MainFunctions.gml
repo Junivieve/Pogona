@@ -11,6 +11,7 @@
 #macro STATE_DEAD 8
 #macro STATE_DUCK 9
 #macro STATE_SHOOT 10
+#macro STATE_EGG 11
 #endregion
 
 function stateSet(_state){//simple state machine handler
