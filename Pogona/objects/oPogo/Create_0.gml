@@ -24,7 +24,7 @@ noFallTimer=0//after an air dash, the player has no gravity for several frames
 idleTimer=0//counts how long we have been idle for, used to set idle animations
 ignoreInputTimer=0//after a wall jump etc, there are several frames where we ignore controller/keyboard input
 walkTimer=0//a timer for playing walking sounds
-hp = 1;
+hp = 5;
 jumps=jumpsMax//setting jump to the value we defined earlier
 dashes=dashesMax//setting dashes to the value we defined earlier
 coyoteTime=coyoteTimeMax//setting coyote time to the value we defined earlier
@@ -35,3 +35,15 @@ statePrevious=STATE_IDLE//previous state
 stateSet(STATE_IDLE);//actually setting the state
 setSpritesFromDash()//defines sprites based on how many dashes we have left
 spriteSet(spriteIdle)//finally we set our sprite
+
+if(!audio_is_playing(mCave)) {
+	audio_play_sound(mCave, 1, true);
+}
+
+if(!audio_is_playing(mGameOn)) {
+	audio_play_sound(mGameOn, 1, false);
+}
+
+if(!audio_is_playing(mBGM)) {
+	audio_play_sound(mBGM, 1, true);
+}

@@ -57,7 +57,10 @@ switch(state) {
 		}
 		
 		if(place_meeting(x, y, oPogo)) {
+			oPogo.hspd += 6 * (-oPogo.image_xscale);
+			oPogo.vspd -= 2;
 			oPogo.state = STATE_HURT;
+			audio_play_sound(mFroghit, 1, false);
 			oPogo.hp --;
 		}
 			
