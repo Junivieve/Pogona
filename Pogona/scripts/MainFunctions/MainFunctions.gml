@@ -1,4 +1,4 @@
-//MACROS
+ //MACROS
 #region macros
 #macro STATE_IDLE 0
 #macro STATE_WAIT 1
