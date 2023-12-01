@@ -7,8 +7,18 @@ if(instance_exists(oScalePlatform)) {
 		audio_play_sound(mScaleBreak, 1, false);
 	}
 }
-if(place_meeting(x, y, oBox)) {
-	var _p = instance_create_layer(x-11*dir, y, "Instances", oScalePlatformSpawn);
+if(place_meeting(x, y, oFrog)) {
+	var _f = instance_place(x, y, oFrog);
+	_f.hp --;
+	_f.state = FROGSTATE.HURT;
+	instance_create_layer(x, y, "Instances", oScaleItem);
+	instance_destroy();	
+	audio_play_sound(mScaleBreak, 1, false);
+}
+if(place_meeting(x+dir, y, oBox)) {
+	var _box = instance_place(x+dir, y, oBox);
+	var _sp = dir == -1 ? 14 : -16;
+	var _p = instance_create_layer(_box.x + _sp, y, "Instances", oScalePlatformSpawn);
 	_p.image_xscale = dir;
 	audio_play_sound(mScaleHitWall, 1, false);
 	instance_destroy();	

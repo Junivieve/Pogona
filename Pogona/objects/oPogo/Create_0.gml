@@ -12,6 +12,7 @@ coyoteTimeMax=5//how many frames late can we jump, when falling off a ledge
 staminaMax=2000//how many frames can we climb up walls
 grav=0.15//gravity
 scales = 3;
+canshoot = true;
 //various movement variables
 dashXX=1//used for aiming the air dash
 dashYY=0//used for aiming the air dash
@@ -23,7 +24,7 @@ noFallTimer=0//after an air dash, the player has no gravity for several frames
 idleTimer=0//counts how long we have been idle for, used to set idle animations
 ignoreInputTimer=0//after a wall jump etc, there are several frames where we ignore controller/keyboard input
 walkTimer=0//a timer for playing walking sounds
-
+hp = 1;
 jumps=jumpsMax//setting jump to the value we defined earlier
 dashes=dashesMax//setting dashes to the value we defined earlier
 coyoteTime=coyoteTimeMax//setting coyote time to the value we defined earlier

@@ -1,1 +1,1 @@
-aliveTime = 3;
+aliveTime = 3 + (0.2 * oPogo.scales);

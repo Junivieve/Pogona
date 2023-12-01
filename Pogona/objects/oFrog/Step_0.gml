@@ -55,5 +55,28 @@ switch(state) {
 			state = FROGSTATE.MOVE;	
 			movetime = 3;
 		}
+		
+		if(place_meeting(x, y, oPogo)) {
+			oPogo.state = STATE_HURT;
+			oPogo.hp --;
+		}
+			
+	break;
+	
+	case FROGSTATE.HURT:
+		sprite_index = Hit;
+		state = moving == true ? FROGSTATE.MOVE : FROGSTATE.IDLE;
+	break;
+	
+	case FROGSTATE.DEAD:
+		repeat(6) {
+			CreateParticle(x, y, "Instances", OBJ_PARTICLE, particle_strip5, irandom(360), 0.4, 0.2, 1, c_white, false);
+		}
+		instance_destroy();
 	break;
 }
+
+if(hp <= 0) {
+	state = FROGSTATE.DEAD;
+}
+	

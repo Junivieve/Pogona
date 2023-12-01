@@ -161,7 +161,7 @@ if state=STATE_WALLSLIDE{//wall slide
 		audio_play_sound(sndLand2,1,0)//land sound on state's first frame
 	}
 	
-	vspd=vspd*min((stateTimer+40)/60,1)//slowly increase speed the longer we slide
+	//vspd=vspd*min((stateTimer+40)/60,1)//slowly increase speed the longer we slide
 	
 	if _grounded{stateSet(STATE_IDLE)}//revert back to idle state
 	
@@ -176,8 +176,8 @@ if state=STATE_WALLSLIDE{//wall slide
 			spriteSet(spriteWallClimb)//sprite
 		}
 	}else{
-		spriteSet(spriteWallSlide)//sprite
-		if stamina<=0{spriteSet(spriteWallSlideSad)}//we ran out of stamina
+		//spriteSet(spriteWallSlide)//sprite
+		//if stamina<=0{spriteSet(spriteWallSlideSad)}//we ran out of stamina
 	}	
 	
 	//if inputAction(){jumpOffWall()}//wall jump
@@ -240,7 +240,8 @@ if state=STATE_DASH{//dash
 
 if state=STATE_HURT{//hurt
 	spriteSet(spriteHurt)//sprite
-	//i did not really end up using this state for anything
+	//i did not really end up using this state for anythin
+	state = STATE_IDLE;
 }
 
 if state=STATE_DUCK{//ducking
@@ -254,10 +255,11 @@ if state=STATE_DUCK{//ducking
 
 if state = STATE_SHOOT {
 	spriteSet(spriteShoot);
-	if(scales > 0) {
+	if(scales > 0 && canshoot) {
 		var _scale = instance_create_layer(x, y-3, "Instances", oScale);
 		_scale.dir = sign(image_xscale);
 		scales --;	
+		canshoot = false;
 	}
 	
 	if(image_index >= image_number-1) {
@@ -268,7 +270,10 @@ if state = STATE_SHOOT {
 
 
 if(inputShoot()) {
-	state = STATE_SHOOT;	
+	state = STATE_SHOOT;
+	if(!canshoot) {
+		canshoot = true;
+	}
 }
 //out of stamina effect
 #region stamina effect
@@ -282,4 +287,6 @@ if stamina<=0{
 
 pixelMovement(hspd,vspd)//move the character across the screen
 
-show_debug_message(image_index);
+if(hp <= 0) {
+	state = STATE_DEAD;	
+}
