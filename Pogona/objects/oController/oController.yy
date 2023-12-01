@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Pogona",
+    "path": "Pogona.yyp",
   },
   "parentObjectId": null,
   "persistent": false,

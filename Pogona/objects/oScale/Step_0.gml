@@ -7,6 +7,13 @@ if(instance_exists(oScalePlatform)) {
 		audio_play_sound(mScaleBreak, 1, false);
 	}
 }
+if(instance_exists(oTrap)) {
+	if(point_distance(x, y, oScalePlatform.x, oScalePlatform.y) < 3) {
+		instance_create_layer(x, y, "Instances", oScaleItem);
+		instance_destroy();	
+		audio_play_sound(mScaleBreak, 1, false);
+	}
+}
 if(place_meeting(x, y, oFrog)) {
 	var _f = instance_place(x, y, oFrog);
 	_f.hp --;
