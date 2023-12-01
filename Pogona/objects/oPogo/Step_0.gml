@@ -242,6 +242,11 @@ if state=STATE_HURT{//hurt
 	spriteSet(spriteHurt)//sprite
 	//i did not really end up using this state for anythin
 	state = STATE_IDLE;
+	if(array_length(oController.hearts) > 0) {
+		show_debug_message(oController.hearts[array_length(oController.hearts)-1]);
+		oController.hearts[array_length(oController.hearts)-1].destroy();
+		array_pop(oController.hearts);
+	}
 }
 
 if state=STATE_DUCK{//ducking

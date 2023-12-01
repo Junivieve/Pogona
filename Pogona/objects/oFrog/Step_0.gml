@@ -57,6 +57,8 @@ switch(state) {
 		}
 		
 		if(place_meeting(x, y, oPogo)) {
+			oPogo.hspd += 6 * (-oPogo.image_xscale);
+			oPogo.vspd -= 2;
 			oPogo.state = STATE_HURT;
 			oPogo.hp --;
 		}
