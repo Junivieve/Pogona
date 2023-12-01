@@ -3,7 +3,7 @@ switch(state) {
 		sprite_index = Idle;
 		speed = 0;
 		if(point_distance(x, y, oPogo.x, oPogo.y) < 32) {
-			if(canAttack && oPogo.state != STATE_DEAD) {
+			if(canAttack && oPogo.state != STATE_DEAD && oPogo.iframe == 0) {
 				state = FROGSTATE.ATTACK;	
 				image_index = 0;
 				canAttack = false;
@@ -35,7 +35,7 @@ switch(state) {
 			break;
 		}
 		if(point_distance(x, y, oPogo.x, oPogo.y) < 32) {
-			if(canAttack && oPogo.state != STATE_DEAD) {
+			if(canAttack && oPogo.state != STATE_DEAD && oPogo.iframe == 0) {
 				state = FROGSTATE.ATTACK;	
 				image_index = 0;
 				canAttack = false;
