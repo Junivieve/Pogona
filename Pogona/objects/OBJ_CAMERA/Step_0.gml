@@ -60,7 +60,7 @@ if (shake)
 
       if (shake_magnitude <= 0) 
       { 
-         camera_set_view_pos(view_camera[0], 0, 0); 
+         camera_set_view_pos(cam, cx, cy); 
          shake = false; 
       } 
    } 
