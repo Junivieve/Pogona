@@ -2,7 +2,7 @@
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
   "name": "fTextNormal",
-  "AntiAlias": 1,
+  "AntiAlias": 0,
   "applyKerning": 0,
   "ascender": 23,
   "ascenderOffset": 0,

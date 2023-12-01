@@ -44,6 +44,6 @@ if(!audio_is_playing(mGameOn)) {
 	audio_play_sound(mGameOn, 1, false);
 }
 
-if(!audio_is_playing(mBGM)) {
-	audio_play_sound(mBGM, 1, true);
+if(!audio_is_playing(PogonaTheme)) {
+	audio_play_sound(PogonaTheme, 1, true);
 }

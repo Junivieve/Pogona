@@ -30,6 +30,10 @@ setSpritesFromDash()//update our sprites based on how many dashes we have left
 //STATE MACHINE
 #region state machine
 if state=STATE_DEAD{//dead
+	audio_stop_sound(PogonaTheme);
+	if(!audio_is_playing(PogonaDeath)) {
+		game_restart();	
+	}
 	if stateTimer=1{sleep(250)}//first frame of death, we pause the game for 1/4 second
 	spriteSet(spriteDead)//set the sprite
 	pixelMovement(hspd,vspd)//move the player
@@ -293,5 +297,8 @@ if stamina<=0{
 pixelMovement(hspd,vspd)//move the character across the screen
 
 if(hp <= 0) {
+	if(!audio_is_playing(PogonaDeath)) {
+		audio_play_sound(PogonaDeath, 1, false);	
+	}
 	state = STATE_DEAD;	
 }

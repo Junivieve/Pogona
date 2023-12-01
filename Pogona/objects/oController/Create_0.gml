@@ -3,8 +3,6 @@ global.timer = 0;
 if(room != rm_menu) {
 	timerText = 0;
 	mins = 0;
-	scribble_font_bake_outline_8dir_2px("fTextNormal", "fTextNormalOutlined", c_black, true);
-	scribble_font_set_default("fTextNormalOutlined");
 
 	heartsPanel = new UIPanel("HeartsPanel", 16, 96, 300, 160, -1);
 	hearts = [];

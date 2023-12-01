@@ -119,8 +119,8 @@
   "lineHeight": 15,
   "maintainGms1Font": false,
   "parent": {
-    "name": "Pogona",
-    "path": "Pogona.yyp",
+    "name": "WTF",
+    "path": "folders/WTF.yy",
   },
   "pointRounding": 0,
   "ranges": [
