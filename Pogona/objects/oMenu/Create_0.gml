@@ -5,7 +5,7 @@ startbutton = menu.add(new UIButton("startButton", 8, 8, 100, 40, "Start", blue_
 with(startbutton) {
 	setDraggable(false);	
 	setCallback(UI_EVENT.LEFT_RELEASE, function() {
-		room_goto_next();
+		room_goto(Lvl3Faro);
 		var _m = getParent();
 		_m.destroy();
 	});	
