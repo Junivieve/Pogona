@@ -15,7 +15,7 @@ dashesMax=1//how many air dashes we have (does not do anything with values > 1 y
 coyoteTimeMax=5//how many frames late can we jump, when falling off a ledge
 staminaMax=2000//how many frames can we climb up walls
 grav=0.15//gravity
-scales = 3;
+scales = 0;
 canshoot = true;
 //various movement variables
 dashXX=1//used for aiming the air dash
@@ -34,12 +34,13 @@ jumps=jumpsMax//setting jump to the value we defined earlier
 dashes=dashesMax//setting dashes to the value we defined earlier
 coyoteTime=coyoteTimeMax//setting coyote time to the value we defined earlier
 stamina=staminaMax//setting stamina to the value we defined earlier
-
+tutorial = 0;
 state=STATE_IDLE//the player's state machine
 statePrevious=STATE_IDLE//previous state
 stateSet(STATE_IDLE);//actually setting the state
 setSpritesFromDash()//defines sprites based on how many dashes we have left
 spriteSet(spriteIdle)//finally we set our sprite
+
 
 if(!audio_is_playing(mCave)) {
 	audio_play_sound(mCave, 1, true);
@@ -52,3 +53,4 @@ if(!audio_is_playing(mGameOn)) {
 if(!audio_is_playing(PogonaTheme)) {
 	audio_play_sound(PogonaTheme, 1, true);
 }
+

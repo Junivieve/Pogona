@@ -1,14 +1,9 @@
-if(place_meeting(x, y, oPlayer)) {
-	if(myTextBox == noone) {
-		myTextBox = instance_create_layer(dialogue.defaultX, dialogue.defaultY, "Text", oDialogue);
-		myTextBox.text = dialogue.textArray[dialogue.currentPos];
+if(place_meeting(x, y, oPogo)) {
+	if(!instance_exists(oTutorial)) {
+		instance_create_layer(x, y, "Instances", oTutorial);
+		instance_destroy();
 	}
-} else {
-	if(myTextBox != noone) {
-		instance_destroy(myTextBox);
-		myTextBox = noone;
-	}
-}
+} 
 
 vsp += grv;
 

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sCricket",
-    "path": "sprites/sCricket/sCricket.yy",
+    "name": "sTutorialCricket",
+    "path": "sprites/sTutorialCricket/sTutorialCricket.yy",
   },
   "spriteMaskId": null,
   "visible": true,
