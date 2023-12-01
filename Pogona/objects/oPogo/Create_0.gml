@@ -1,6 +1,10 @@
 /// @description Initilize player
 
 //movement settings
+hasDash = false;
+hasClimb = false;
+hasShoot = false;
+iframe = 0;
 dashSpeed=4//how fast we move when dashing
 dashLength=15//how many frames we dash for
 dashPreLength=5//how many frames the game freezes, when you initiate a dash (so the player has time to aim the dash)
@@ -25,6 +29,7 @@ idleTimer=0//counts how long we have been idle for, used to set idle animations
 ignoreInputTimer=0//after a wall jump etc, there are several frames where we ignore controller/keyboard input
 walkTimer=0//a timer for playing walking sounds
 hp = 5;
+hpmax = 5;
 jumps=jumpsMax//setting jump to the value we defined earlier
 dashes=dashesMax//setting dashes to the value we defined earlier
 coyoteTime=coyoteTimeMax//setting coyote time to the value we defined earlier

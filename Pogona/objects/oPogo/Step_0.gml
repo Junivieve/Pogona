@@ -30,16 +30,44 @@ setSpritesFromDash()//update our sprites based on how many dashes we have left
 //STATE MACHINE
 #region state machine
 if state=STATE_DEAD{//dead
+	spriteSet(spriteDead)
 	audio_stop_sound(PogonaTheme);
-	if(!audio_is_playing(PogonaDeath)) {
-		game_restart();	
+	if(array_length(oController.hearts) > 0) {
+		show_debug_message(oController.hearts[array_length(oController.hearts)-1]);
+		oController.hearts[array_length(oController.hearts)-1].destroy();
+		array_pop(oController.hearts);
 	}
-	if stateTimer=1{sleep(250)}//first frame of death, we pause the game for 1/4 second
-	spriteSet(spriteDead)//set the sprite
-	pixelMovement(hspd,vspd)//move the player
-	hspd=hspd*0.9 //slowly reduce movement speed
-	vspd=vspd*0.9 //slowly reduce movement speed
-	exit//exit the step event
+	if(!audio_is_playing(PogonaDeath)) {
+		if(checkpoint == noone) {
+		x = oPogo.xstart;
+		y = oPogo.ystart;
+		} else {
+			var _crystal = oPogo.checkpoint; 
+			x = _crystal.x;
+			y = _crystal.y;
+		}
+		if(!audio_is_playing(mCave)) {
+			audio_play_sound(mCave, 1, true);
+		}
+
+		if(!audio_is_playing(mGameOn)) {
+			audio_play_sound(mGameOn, 1, false);
+		}
+
+		if(!audio_is_playing(PogonaTheme)) {
+			audio_play_sound(PogonaTheme, 1, true);
+		}
+		state = STATE_IDLE;
+		image_speed = 1;
+		hp = hpmax;
+		oController.addhearts();
+	}
+	//if stateTimer=1{sleep(250)}//first frame of death, we pause the game for 1/4 second
+	//set the sprite
+	//pixelMovement(hspd,vspd)//move the player
+	//hspd=hspd*0.9 //slowly reduce movement speed
+	//vspd=vspd*0.9 //slowly reduce movement speed
+	//exit//exit the step event
 }
 
 if state=STATE_IDLE{//idle
@@ -127,7 +155,7 @@ if state=STATE_FALL{//falling
 	
 	if inputAction(){//player presses action button
 		if coyoteTime>0{stateSet(STATE_JUMP)}//we jump or
-		else{if dashes>0{stateSet(STATE_DASH)}}//we dash
+		else{if(dashes>0 && hasDash){stateSet(STATE_DASH)}}//we dash
 		
 	}
 }
@@ -155,8 +183,9 @@ if state=STATE_JUMP{//jumping
 	}
 	
 	if vspd>=0{stateSet(STATE_FALL)}//once we start traveling down, switch to fall state
-	
-	if inputAction() and stateTimer>1 {stateSet(STATE_DASH)}//dash if button is pressed again
+	if(hasDash) {
+		if inputAction() and stateTimer>1 {stateSet(STATE_DASH)}//dash if button is pressed again
+	}
 }
 
 if state=STATE_WALLSLIDE{//wall slide
@@ -169,21 +198,21 @@ if state=STATE_WALLSLIDE{//wall slide
 	
 	if _grounded{stateSet(STATE_IDLE)}//revert back to idle state
 	
-	
-	var _climb=inputVert()//check for the player holding up
-	if _climb <0 and stamina>0{//if we have stamina and are holding up
-		var _dir = sign(image_xscale);
-		if(place_meeting(x+_dir, y, oClimb)) {
-			vspd=_climb//climb up
-			stamina--//reduce stamina
-			stateTimer=0//reset falling speed
-			spriteSet(spriteWallClimb)//sprite
-		}
-	}else{
-		//spriteSet(spriteWallSlide)//sprite
-		//if stamina<=0{spriteSet(spriteWallSlideSad)}//we ran out of stamina
-	}	
-	
+	if(hasClimb) {
+		var _climb=inputVert()//check for the player holding up
+		if _climb <0 and stamina>0{//if we have stamina and are holding up
+			var _dir = sign(image_xscale);
+			if(place_meeting(x+_dir, y, oClimb)) {
+				vspd=_climb//climb up
+				stamina--//reduce stamina
+				stateTimer=0//reset falling speed
+				spriteSet(spriteWallClimb)//sprite
+			}
+		}else{
+			//spriteSet(spriteWallSlide)//sprite
+			//if stamina<=0{spriteSet(spriteWallSlideSad)}//we ran out of stamina
+		}	
+	}
 	//if inputAction(){jumpOffWall()}//wall jump
 	
 	if !meetingWall(x+(image_xscale),y){stateSet(STATE_FALL)}//climbing over the top of a wall
@@ -239,7 +268,6 @@ if state=STATE_DASH{//dash
 		noFallTimer=3//few frames of no gravity
 		stateSet(STATE_FALL)//switch to falling
 	}
-	
 }
 
 if state=STATE_HURT{//hurt
@@ -278,7 +306,7 @@ if state = STATE_SHOOT {
 #endregion
 
 
-if(inputShoot()) {
+if(inputShoot() && hasShoot) {
 	state = STATE_SHOOT;
 	if(!canshoot) {
 		canshoot = true;
@@ -301,4 +329,9 @@ if(hp <= 0) {
 		audio_play_sound(PogonaDeath, 1, false);	
 	}
 	state = STATE_DEAD;	
+}
+if(iframe > 0) {
+	iframe -= 0.01 * global.gameTime;
+} else {
+	iframe = 0;	
 }

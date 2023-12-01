@@ -3,7 +3,7 @@ switch(state) {
 		sprite_index = Idle;
 		speed = 0;
 		if(point_distance(x, y, oPogo.x, oPogo.y) < 32) {
-			if(canAttack) {
+			if(canAttack && oPogo.state != STATE_DEAD) {
 				state = FROGSTATE.ATTACK;	
 				image_index = 0;
 				canAttack = false;
@@ -35,7 +35,7 @@ switch(state) {
 			break;
 		}
 		if(point_distance(x, y, oPogo.x, oPogo.y) < 32) {
-			if(canAttack) {
+			if(canAttack && oPogo.state != STATE_DEAD) {
 				state = FROGSTATE.ATTACK;	
 				image_index = 0;
 				canAttack = false;
@@ -62,6 +62,7 @@ switch(state) {
 			oPogo.state = STATE_HURT;
 			audio_play_sound(mFroghit, 1, false);
 			oPogo.hp --;
+			oPogo.iframe = 0.5;
 		}
 			
 	break;
@@ -81,5 +82,9 @@ switch(state) {
 
 if(hp <= 0) {
 	state = FROGSTATE.DEAD;
+}
+
+if(oPogo.iframe > 0) {
+	canAttack = false;	
 }
 	
