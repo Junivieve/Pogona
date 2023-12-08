@@ -18,7 +18,11 @@ if(!surface_exists(light_surf)) {
 		gpu_set_blendmode(bm_normal);
 		draw_sprite_ext(sGlowWhite, 0, x, y, 0.5, 0.5, 0, c_white, 1);
 	}
-
+	with(oTorch) {
+				
+		gpu_set_blendmode(bm_normal);
+		draw_sprite_ext(glowBig, 0, x, y, 0.5, 0.5, 0, c_white, 1);
+	}
 
 
 	gpu_set_blendmode(bm_normal);
