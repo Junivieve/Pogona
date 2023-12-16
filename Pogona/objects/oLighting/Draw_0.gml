@@ -21,7 +21,7 @@ if(!surface_exists(light_surf)) {
 	with(oTorch) {
 				
 		gpu_set_blendmode(bm_normal);
-		draw_sprite_ext(glowBig, 0, x, y, 0.5, 0.5, 0, c_white, 1);
+		draw_sprite_ext(glowBig, 0, x, y, apply_sin(0.5,-0.2,0.002), apply_sin(0.5,-0.2,0.002), 0, c_white, 1);
 	}
 
 
