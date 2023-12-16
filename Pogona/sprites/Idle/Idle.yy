@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "Idle",
-  "bbox_bottom": 14,
+  "bbox_bottom": 13,
   "bbox_left": 2,
   "bbox_right": 20,
   "bbox_top": 4,

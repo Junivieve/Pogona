@@ -20,6 +20,14 @@ if(place_meeting(x, y, oFrog)) {
 	instance_destroy();	
 	audio_play_sound(mScaleBreak, 1, false);
 }
+if(place_meeting(x, y, oSuperFrog)) {
+	var _f = instance_place(x, y, oSuperFrog);
+	_f.hp --;
+	_f.state = BIGFROGSTATE.HURT;
+	instance_create_layer(x, y, "Instances", oScaleItem);
+	instance_destroy();	
+	audio_play_sound(mScaleBreak, 1, false);
+}
 if(place_meeting(x+dir, y, oBox)) {
 	var _box = instance_place(x+dir, y, oBox);
 	var _sp = dir == -1 ? 14 : -16;
