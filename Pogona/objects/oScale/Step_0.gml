@@ -20,6 +20,14 @@ if(place_meeting(x, y, oFrog)) {
 	instance_destroy();	
 	audio_play_sound(mScaleBreak, 1, false);
 }
+if(place_meeting(x, y, oRedFrog)) {
+	var _f = instance_place(x, y, oRedFrog);
+	_f.hp --;
+	_f.state = REDFROGSTATE.HURT;
+	instance_create_layer(x, y, "Instances", oScaleItem);
+	instance_destroy();	
+	audio_play_sound(mScaleBreak, 1, false);
+}
 if(place_meeting(x, y, oSuperFrog)) {
 	var _f = instance_place(x, y, oSuperFrog);
 	_f.hp --;
