@@ -2,7 +2,7 @@
 	case BIGFROGSTATE.IDLE:
 		sprite_index = Idle;
 		speed = 0;
-		if(point_distance(x, y, oPogo.x, oPogo.y) < 32) {
+		if(point_distance(x, y, oPogo.x, oPogo.y) < 64) {
 			if(canAttack && oPogo.state != STATE_DEAD && oPogo.iframe == 0) {
 				state = BIGFROGSTATE.ATTACK;	
 				image_index = 0;
@@ -34,7 +34,7 @@
 				sprite_index = sFrogJump;
 			break;
 		}
-		if(point_distance(x, y, oPogo.x, oPogo.y) < 32) {
+		if(point_distance(x, y, oPogo.x, oPogo.y) < 64) {
 			if(canAttack && oPogo.state != STATE_DEAD && oPogo.iframe == 0) {
 				state = BIGFROGSTATE.ATTACK;	
 				image_index = 0;

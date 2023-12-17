@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "SBossHealthbarSlider",
-  "bbox_bottom": 7,
+  "name": "sBossHealthBarFrame",
+  "bbox_bottom": 13,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 284,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,17 +13,17 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7f50df6-1c54-41f2-a175-bf76b9cd1b24",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3faae27c-e4ea-4a65-b192-68812e6315cd",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 8,
+  "height": 14,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"67ec9715-dd05-4545-87ac-790ff6868202","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0398c94d-4b9b-4750-9903-dbf7ef09e2c3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 9,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "SBossHealthbarSlider",
+    "name": "sBossHealthBarFrame",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b7f50df6-1c54-41f2-a175-bf76b9cd1b24","path":"sprites/SBossHealthbarSlider/SBossHealthbarSlider.yy",},},},"Disabled":false,"id":"62bd28dc-e98e-4b97-b3ad-357ba9cf75a1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3faae27c-e4ea-4a65-b192-68812e6315cd","path":"sprites/sBossHealthBarFrame/sBossHealthBarFrame.yy",},},},"Disabled":false,"id":"c6d4b07e-090d-49af-b017-8c3f00a63ce9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 3,
+    "yorigin": 3,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1,
+  "width": 285,
 }
