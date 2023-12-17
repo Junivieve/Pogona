@@ -20,7 +20,7 @@ switch(state) {
 		y += 1.6;
 		if(movetime <= 0) {
 			speed = speed == 0 ? 1 : 0;
-			movetime = 3;
+			movetime = 4;
 		}
 
 		image_xscale = direction == 0 ? 1 : -1;
@@ -57,11 +57,11 @@ switch(state) {
 		}
 		
 		if(place_meeting(x, y, oPogo) && oPogo.iframe == 0) {
-			oPogo.hspd += 6 * (-oPogo.image_xscale);
+			oPogo.hspd += 3 * (-oPogo.image_xscale);
 			oPogo.vspd -= 2;
 			oPogo.state = STATE_HURT;
 			audio_play_sound(mFroghit, 1, false);
-			oPogo.hp --;
+			oPogo.hp =0; //oPogo.hp --;
 			oPogo.iframe = 1;
 			canAttack = false;
 			//state = moving == true ? REDFROGSTATE.MOVE : REDFROGSTATE.IDLE;

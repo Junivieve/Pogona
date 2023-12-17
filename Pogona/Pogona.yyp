@@ -77,7 +77,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"red_sliderRight","path":"sprites/red_sliderRight/red_sliderRight.yy",},},
@@ -172,6 +172,7 @@
     {"id":{"name":"yellow_sliderUp","path":"sprites/yellow_sliderUp/yellow_sliderUp.yy",},},
     {"id":{"name":"input_default_joycon_axis","path":"scripts/input_default_joycon_axis/input_default_joycon_axis.yy",},},
     {"id":{"name":"red_button03","path":"sprites/red_button03/red_button03.yy",},},
+    {"id":{"name":"sBossHealthBarrBack","path":"sprites/sBossHealthBarrBack/sBossHealthBarrBack.yy",},},
     {"id":{"name":"input_default_mouse_button","path":"scripts/input_default_mouse_button/input_default_mouse_button.yy",},},
     {"id":{"name":"sMovingPlatform","path":"sprites/sMovingPlatform/sMovingPlatform.yy",},},
     {"id":{"name":"blue_button05","path":"sprites/blue_button05/blue_button05.yy",},},
@@ -471,6 +472,7 @@
     {"id":{"name":"blue_panel","path":"sprites/blue_panel/blue_panel.yy",},},
     {"id":{"name":"oScaleCollectable","path":"objects/oScaleCollectable/oScaleCollectable.yy",},},
     {"id":{"name":"mRunStone3","path":"sounds/mRunStone3/mRunStone3.yy",},},
+    {"id":{"name":"SBossHealthbarSlider","path":"sprites/SBossHealthbarSlider/SBossHealthbarSlider.yy",},},
     {"id":{"name":"scribble_super_create","path":"scripts/scribble_super_create/scribble_super_create.yy",},},
     {"id":{"name":"green_button12","path":"sprites/green_button12/green_button12.yy",},},
     {"id":{"name":"scribble_external_sound_exists","path":"scripts/scribble_external_sound_exists/scribble_external_sound_exists.yy",},},

@@ -57,7 +57,7 @@
 		}
 		
 		if(place_meeting(x, y, oPogo) && oPogo.iframe == 0) {
-			oPogo.hspd += 6 * (-oPogo.image_xscale);
+			oPogo.hspd += 2 * (-oPogo.image_xscale);
 			oPogo.vspd -= 2;
 			oPogo.state = STATE_HURT;
 			audio_play_sound(mFroghit, 1, false);
