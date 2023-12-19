@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sScalePlatform",
-    "path": "sprites/sScalePlatform/sScalePlatform.yy",
+    "name": "sScalePlatform2",
+    "path": "sprites/sScalePlatform2/sScalePlatform2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
