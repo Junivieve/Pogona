@@ -602,6 +602,7 @@
     {"id":{"name":"mScaleHitWallZZ","path":"sounds/mScaleHitWallZZ/mScaleHitWallZZ.yy",},},
     {"id":{"name":"__scribble_get_effects_slash_map","path":"scripts/__scribble_get_effects_slash_map/__scribble_get_effects_slash_map.yy",},},
     {"id":{"name":"scribble_markdown_set_styles","path":"scripts/scribble_markdown_set_styles/scribble_markdown_set_styles.yy",},},
+    {"id":{"name":"oCredit","path":"objects/oCredit/oCredit.yy",},},
     {"id":{"name":"__input_class_player","path":"scripts/__input_class_player/__input_class_player.yy",},},
     {"id":{"name":"scribble_typewriter_add_event","path":"scripts/scribble_typewriter_add_event/scribble_typewriter_add_event.yy",},},
     {"id":{"name":"grey_button04","path":"sprites/grey_button04/grey_button04.yy",},},
@@ -644,6 +645,7 @@
     {"id":{"name":"__shd_scribble_bake_outline_8dir","path":"shaders/__shd_scribble_bake_outline_8dir/__shd_scribble_bake_outline_8dir.yy",},},
     {"id":{"name":"Sprite179","path":"sprites/Sprite179/Sprite179.yy",},},
     {"id":{"name":"red_panel","path":"sprites/red_panel/red_panel.yy",},},
+    {"id":{"name":"rm_credit","path":"rooms/rm_credit/rm_credit.yy",},},
     {"id":{"name":"scribble_font_force_bilinear_filtering","path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},},
     {"id":{"name":"green_boxTick","path":"sprites/green_boxTick/green_boxTick.yy",},},
     {"id":{"name":"Terrain","path":"sprites/Terrain/Terrain.yy",},},
@@ -703,6 +705,7 @@
     {"roomId":{"name":"Lvl1Faro","path":"rooms/Lvl1Faro/Lvl1Faro.yy",},},
     {"roomId":{"name":"rm_end","path":"rooms/rm_end/rm_end.yy",},},
     {"roomId":{"name":"rm_tut","path":"rooms/rm_tut/rm_tut.yy",},},
+    {"roomId":{"name":"rm_credit","path":"rooms/rm_credit/rm_credit.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
