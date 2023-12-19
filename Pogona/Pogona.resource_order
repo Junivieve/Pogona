@@ -123,6 +123,7 @@
     {"name":"Jump","order":12,"path":"sprites/Jump/Jump.yy",},
     {"name":"oGrass","order":28,"path":"objects/oGrass/oGrass.yy",},
     {"name":"rm_menu","order":4,"path":"rooms/rm_menu/rm_menu.yy",},
+    {"name":"Lvl3FaroBeta","order":8,"path":"rooms/Lvl3FaroBeta/Lvl3FaroBeta.yy",},
     {"name":"sClimbItem","order":33,"path":"sprites/sClimbItem/sClimbItem.yy",},
     {"name":"__scribble_gen_9_write_vbuffs","order":9,"path":"scripts/__scribble_gen_9_write_vbuffs/__scribble_gen_9_write_vbuffs.yy",},
     {"name":"__scribble_gen_8_position_glyphs","order":8,"path":"scripts/__scribble_gen_8_position_glyphs/__scribble_gen_8_position_glyphs.yy",},

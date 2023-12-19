@@ -77,7 +77,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"red_sliderRight","path":"sprites/red_sliderRight/red_sliderRight.yy",},},
@@ -156,6 +156,7 @@
     {"id":{"name":"Jump","path":"sprites/Jump/Jump.yy",},},
     {"id":{"name":"oGrass","path":"objects/oGrass/oGrass.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"Lvl3FaroBeta","path":"rooms/Lvl3FaroBeta/Lvl3FaroBeta.yy",},},
     {"id":{"name":"sClimbItem","path":"sprites/sClimbItem/sClimbItem.yy",},},
     {"id":{"name":"__scribble_gen_9_write_vbuffs","path":"scripts/__scribble_gen_9_write_vbuffs/__scribble_gen_9_write_vbuffs.yy",},},
     {"id":{"name":"__scribble_gen_8_position_glyphs","path":"scripts/__scribble_gen_8_position_glyphs/__scribble_gen_8_position_glyphs.yy",},},
@@ -710,6 +711,7 @@
     {"roomId":{"name":"rm_end","path":"rooms/rm_end/rm_end.yy",},},
     {"roomId":{"name":"rm_tut","path":"rooms/rm_tut/rm_tut.yy",},},
     {"roomId":{"name":"rm_credit","path":"rooms/rm_credit/rm_credit.yy",},},
+    {"roomId":{"name":"Lvl3FaroBeta","path":"rooms/Lvl3FaroBeta/Lvl3FaroBeta.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

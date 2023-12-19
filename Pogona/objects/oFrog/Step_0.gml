@@ -16,6 +16,7 @@ switch(state) {
 		}
 	break;
 	case FROGSTATE.MOVE: 
+		if(guard) state = FROGSTATE.IDLE;
 		movetime -= 0.01 * global.gameTime;
 		y += 1.6;
 		if(movetime <= 0) {
@@ -49,6 +50,7 @@ switch(state) {
 	break;
 	
 	case FROGSTATE.ATTACK:
+		if(guard) state = FROGSTATE.IDLE;
 		sprite_index = Attack;
 		
 		if(image_index >= image_number-1) {

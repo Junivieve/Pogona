@@ -12,3 +12,4 @@ enum FROGSTATE {
 canAttack = true;
 moving = true;
 state = FROGSTATE.MOVE;
+guard = false;

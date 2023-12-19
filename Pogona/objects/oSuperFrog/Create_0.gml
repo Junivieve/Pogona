@@ -1,7 +1,7 @@
 direction = 0;
 speed = 0;
 movetime = 0;
-hp = 200;
+hp = 150;
 hp_max = hp;
 
 healthbar_width = 279;
@@ -14,7 +14,8 @@ enum BIGFROGSTATE {
 	MOVE,
 	ATTACK,
 	HURT,
-	DEAD
+	DEAD,
+	AGRO
 }
 canAttack = true;
 moving = true;
