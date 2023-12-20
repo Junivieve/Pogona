@@ -2,7 +2,7 @@
 	case BIGFROGSTATE.IDLE:
 		sprite_index = Idle;
 		speed = 0;
-		if(point_distance(x, y, oPogo.x, oPogo.y) < 64) {
+		if(point_distance(x, y, oPogo.x, oPogo.y) < 150) {
 			if(canAttack && oPogo.state != STATE_DEAD && oPogo.iframe == 0) {
 				state = BIGFROGSTATE.ATTACK;	
 				image_index = 0;
@@ -34,7 +34,41 @@
 				sprite_index = sFrogJump;
 			break;
 		}
-		if(point_distance(x, y, oPogo.x, oPogo.y) < 64) {
+		if(point_distance(x, y, oPogo.x, oPogo.y) < 150) {
+			if(canAttack && oPogo.state != STATE_DEAD && oPogo.iframe == 0) {
+				state = BIGFROGSTATE.ATTACK;	
+				image_index = 0;
+				canAttack = false;
+				if(image_xscale != oPogo.image_xscale * -1) {
+					image_xscale = oPogo.image_xscale * -1;
+				}
+			}
+		} else {
+			canAttack = true;	
+		}
+	break;
+	
+	case BIGFROGSTATE.AGRO: 
+		movetime -= 0.01 * global.gameTime;
+		y += 2.5;
+		speed = 1;
+		
+		if(oPogo.x < x) {
+			image_xscale = -1;
+		} else {
+			image_xscale = 1;	
+		}
+
+		switch(speed) { 
+			case 0:
+				sprite_index = sFrogIdle;
+			break;
+	
+			case 1:
+				sprite_index = sFrogJump;
+			break;
+		}
+		if(point_distance(x, y, oPogo.x, oPogo.y) < 150) {
 			if(canAttack && oPogo.state != STATE_DEAD && oPogo.iframe == 0) {
 				state = BIGFROGSTATE.ATTACK;	
 				image_index = 0;
@@ -50,13 +84,10 @@
 	
 	case BIGFROGSTATE.ATTACK:
 		sprite_index = sFrogAttack;
+		speed = 0;
+
 		
-		if(image_index >= image_number-1) {
-			state = BIGFROGSTATE.MOVE;	
-			movetime = 3;
-		}
-		
-		if(place_meeting(x, y, oPogo) && oPogo.iframe == 0) {
+		if((point_distance(x, y, oPogo.x, oPogo.y) < 18) or place_meeting(x, y, oPogo) && oPogo.iframe == 0) {
 			oPogo.hspd += 2 * (-oPogo.image_xscale);
 			oPogo.vspd -= 2;
 			oPogo.state = STATE_HURT;
@@ -66,12 +97,20 @@
 			canAttack = false;
 			//state = moving == true ? BIGFROGSTATE.MOVE : BIGFROGSTATE.IDLE;
 		}
+		
+		if(image_index >= image_number-1) {
+			canAttack = true;	
+			state = BIGFROGSTATE.MOVE;	
+			speed = 1;
+			movetime = 3;
+		}
 			
 	break;
 	
 	case BIGFROGSTATE.HURT:
 		sprite_index = sFrogHit;
 		state = moving == true ? BIGFROGSTATE.MOVE : BIGFROGSTATE.IDLE;
+		canAttack = true;
 	break;
 	
 	case BIGFROGSTATE.DEAD:

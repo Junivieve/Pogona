@@ -1,7 +1,7 @@
 x += spd * dir;
 image_xscale = dir;
 if(instance_exists(oScalePlatform)) {
-	if(point_distance(x, y, oScalePlatform.x, oScalePlatform.y) < 3) {
+	if(point_distance(x, y, oScalePlatform.x, oScalePlatform.y) < 4) {
 		instance_create_layer(x, y, "Instances", oScaleItem);
 		instance_destroy();	
 		audio_play_sound(mScaleBreak, 1, false);

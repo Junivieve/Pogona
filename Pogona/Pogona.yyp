@@ -77,7 +77,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"red_sliderRight","path":"sprites/red_sliderRight/red_sliderRight.yy",},},
@@ -156,6 +156,7 @@
     {"id":{"name":"Jump","path":"sprites/Jump/Jump.yy",},},
     {"id":{"name":"oGrass","path":"objects/oGrass/oGrass.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"Lvl3FaroBeta","path":"rooms/Lvl3FaroBeta/Lvl3FaroBeta.yy",},},
     {"id":{"name":"sClimbItem","path":"sprites/sClimbItem/sClimbItem.yy",},},
     {"id":{"name":"__scribble_gen_9_write_vbuffs","path":"scripts/__scribble_gen_9_write_vbuffs/__scribble_gen_9_write_vbuffs.yy",},},
     {"id":{"name":"__scribble_gen_8_position_glyphs","path":"scripts/__scribble_gen_8_position_glyphs/__scribble_gen_8_position_glyphs.yy",},},
@@ -606,6 +607,7 @@
     {"id":{"name":"mScaleHitWallZZ","path":"sounds/mScaleHitWallZZ/mScaleHitWallZZ.yy",},},
     {"id":{"name":"__scribble_get_effects_slash_map","path":"scripts/__scribble_get_effects_slash_map/__scribble_get_effects_slash_map.yy",},},
     {"id":{"name":"scribble_markdown_set_styles","path":"scripts/scribble_markdown_set_styles/scribble_markdown_set_styles.yy",},},
+    {"id":{"name":"oCredit","path":"objects/oCredit/oCredit.yy",},},
     {"id":{"name":"__input_class_player","path":"scripts/__input_class_player/__input_class_player.yy",},},
     {"id":{"name":"scribble_typewriter_add_event","path":"scripts/scribble_typewriter_add_event/scribble_typewriter_add_event.yy",},},
     {"id":{"name":"grey_button04","path":"sprites/grey_button04/grey_button04.yy",},},
@@ -648,6 +650,7 @@
     {"id":{"name":"__shd_scribble_bake_outline_8dir","path":"shaders/__shd_scribble_bake_outline_8dir/__shd_scribble_bake_outline_8dir.yy",},},
     {"id":{"name":"Sprite179","path":"sprites/Sprite179/Sprite179.yy",},},
     {"id":{"name":"red_panel","path":"sprites/red_panel/red_panel.yy",},},
+    {"id":{"name":"rm_credit","path":"rooms/rm_credit/rm_credit.yy",},},
     {"id":{"name":"scribble_font_force_bilinear_filtering","path":"scripts/scribble_font_force_bilinear_filtering/scribble_font_force_bilinear_filtering.yy",},},
     {"id":{"name":"green_boxTick","path":"sprites/green_boxTick/green_boxTick.yy",},},
     {"id":{"name":"Terrain","path":"sprites/Terrain/Terrain.yy",},},
@@ -707,6 +710,8 @@
     {"roomId":{"name":"Lvl1Faro","path":"rooms/Lvl1Faro/Lvl1Faro.yy",},},
     {"roomId":{"name":"rm_end","path":"rooms/rm_end/rm_end.yy",},},
     {"roomId":{"name":"rm_tut","path":"rooms/rm_tut/rm_tut.yy",},},
+    {"roomId":{"name":"rm_credit","path":"rooms/rm_credit/rm_credit.yy",},},
+    {"roomId":{"name":"Lvl3FaroBeta","path":"rooms/Lvl3FaroBeta/Lvl3FaroBeta.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
