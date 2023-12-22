@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sClimbItem",
-    "path": "sprites/sClimbItem/sClimbItem.yy",
+    "name": "sCollectableVine",
+    "path": "sprites/sCollectableVine/sCollectableVine.yy",
   },
   "spriteMaskId": null,
   "visible": true,
