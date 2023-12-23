@@ -100,7 +100,7 @@ function setSpritesFromDash(){//set the players sprites based on dashes
 	spriteWait2=sPogoIdle
 	spriteWait3=sPogoIdle
 	spriteWalk=sPogoRun
-	spriteJump=sPogoJump
+	spriteJump=sPogo_jump_12fps
 	spriteFall=sPogo_fall_12fps
 	spriteWallSlide=sPogo_wallgrab_8fps
 	spriteWallSlideSad=sPogo_wallgrabSad_8fps
@@ -110,6 +110,7 @@ function setSpritesFromDash(){//set the players sprites based on dashes
 	spriteDead=sPogoDie;
 	spriteDuck=sPogo_crouch_8fps
 	spriteShoot=sPogoShoot; 
+	spriteHang=sPogoHang;
 }
 	
 function resetStats(){//resets the players coyote time, jump, dashes, and stamina

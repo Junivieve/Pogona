@@ -174,7 +174,7 @@ if state=STATE_JUMP{//jumping
 	var _walk=walkInput()
 	if _walk=0 and ignoreInputTimer<=0 {hspd=hspd*0.6}//air friction
 	spriteSet(spriteJump)//sprite
-	if image_index>5{image_index=6}//loops the falling part of the jump animation
+	if image_index>3{image_index=4}//loops the falling part of the jump animation
 	
 	if stateTimer=0{//if this is the first frame of the state
 		if coyoteTime>0 and jumps>0{//if we can jump
@@ -186,7 +186,6 @@ if state=STATE_JUMP{//jumping
 			stateSet(statePrevious)//if we cant jump, revert to our previous state
 		}
 	}
-	
 	if inputActionReleased() and vspd<0{//releasing jump
 		vspd=vspd/2//slows the player down, so we can do shorter jumps
 	}
