@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sHeart",
-    "path": "sprites/sHeart/sHeart.yy",
+    "name": "sCollectableHeart",
+    "path": "sprites/sCollectableHeart/sCollectableHeart.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sFeather",
-    "path": "sprites/sFeather/sFeather.yy",
+    "name": "sCollectableDash",
+    "path": "sprites/sCollectableDash/sCollectableDash.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sScaleCollectable",
-    "path": "sprites/sScaleCollectable/sScaleCollectable.yy",
+    "name": "sCollectablescale",
+    "path": "sprites/sCollectablescale/sCollectablescale.yy",
   },
   "spriteMaskId": null,
   "visible": true,
