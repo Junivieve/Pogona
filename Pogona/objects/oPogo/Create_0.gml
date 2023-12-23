@@ -1,5 +1,5 @@
 /// @description Initilize player
-
+depth = 100
 //movement settings
 hasDash = false;
 hasClimb = false;

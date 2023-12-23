@@ -296,6 +296,7 @@
     {"id":{"name":"oDialogue","path":"objects/oDialogue/oDialogue.yy",},},
     {"id":{"name":"yellow_checkmark","path":"sprites/yellow_checkmark/yellow_checkmark.yy",},},
     {"id":{"name":"red_sliderDown","path":"sprites/red_sliderDown/red_sliderDown.yy",},},
+    {"id":{"name":"Sprite260","path":"sprites/Sprite260/Sprite260.yy",},},
     {"id":{"name":"yellow_panel","path":"sprites/yellow_panel/yellow_panel.yy",},},
     {"id":{"name":"grey_button08","path":"sprites/grey_button08/grey_button08.yy",},},
     {"id":{"name":"input_check_pressed","path":"scripts/input_check_pressed/input_check_pressed.yy",},},

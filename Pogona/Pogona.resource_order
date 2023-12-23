@@ -257,6 +257,7 @@
     {"name":"oDialogue","order":14,"path":"objects/oDialogue/oDialogue.yy",},
     {"name":"yellow_checkmark","order":142,"path":"sprites/yellow_checkmark/yellow_checkmark.yy",},
     {"name":"red_sliderDown","order":120,"path":"sprites/red_sliderDown/red_sliderDown.yy",},
+    {"name":"Sprite260","order":63,"path":"sprites/Sprite260/Sprite260.yy",},
     {"name":"yellow_panel","order":145,"path":"sprites/yellow_panel/yellow_panel.yy",},
     {"name":"grey_button08","order":75,"path":"sprites/grey_button08/grey_button08.yy",},
     {"name":"input_check_pressed","order":5,"path":"scripts/input_check_pressed/input_check_pressed.yy",},
