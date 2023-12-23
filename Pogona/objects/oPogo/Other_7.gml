@@ -48,7 +48,7 @@ if sprite_index=spriteIdleBlink{
 
 //never ended up using this, but the state exists, so lets leave it here
 //incase we end up using it later
-if sprite_index=spriteHurt{
+if sprite_index=spriteHurt {
 	stateSet(STATE_FALL)
 }
 
