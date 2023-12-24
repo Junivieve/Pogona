@@ -1,2 +1,2 @@
-// Then draw the sprite of oGoldenFly
+// En el evento "Draw" de oGoldenFly
 draw_self();

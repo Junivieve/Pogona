@@ -5,15 +5,18 @@ particleSystem = part_system_create();
 // Create the particle emitter
 particleEmitter = part_emitter_create(particleSystem);
 
-// Define an orange color
+// Define colors
 var orangeColor = make_color_rgb(251, 169, 0); // RGB values for orange
+var yellowColor = make_color_rgb(251, 162, 0); // RGB values for yellow
 
 // Define the particle type
-particleType = part_type_create();
-part_type_shape(particleType, pt_shape_square); // Sets the shape of the particle to square
-part_type_size(particleType, 0.04, 0.02, -0.001, 0); // Sets the size of the particle (start size, end size, size change per step, size randomness)
-part_type_color1(particleType, orangeColor); // Sets the color of the particle
-part_type_blend(particleType, true); // Enable blending for semi-transparency (true allows blending)
-part_type_speed(particleType, 0.3, 0.1, -0.01, 0.1); // Sets the speed of the particle (min speed, max speed, speed change per step, speed randomness)
-part_type_direction(particleType, 0, 360, 0, 0); // Sets the direction of the particle (min direction, max direction, direction change per step, direction randomness)
-part_type_life(particleType, 60, 120); // Sets the life span of the particle (min life, max life)
+_p = part_type_create();
+part_type_shape(_p, pt_shape_square); // Sets the shape of the particle to square
+part_type_size(_p, 0.04, 0.02, -0.001, 0); // Sets the size of the particle
+part_type_color2(_p, yellowColor, orangeColor); // Sets the color of the particle
+part_type_blend(_p, true); // Enable blending for semi-transparency
+part_type_alpha2(_p, 1, 0); // Sets the alpha transparency of the particle
+part_type_speed(_p, 0.5, 1, -0.01, 0.1); // Sets the speed of the particle
+part_type_direction(_p, 0, 360, 0, 0); // Sets the direction of the particle
+part_type_life(_p, 60, 250); // Sets the life span of the particle
+part_type_gravity(_p, 0.01, 270); 
