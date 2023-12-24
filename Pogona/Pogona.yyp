@@ -77,7 +77,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"red_sliderRight","path":"sprites/red_sliderRight/red_sliderRight.yy",},},
@@ -603,6 +603,7 @@
     {"id":{"name":"grey_button09","path":"sprites/grey_button09/grey_button09.yy",},},
     {"id":{"name":"TerrainTileset","path":"tilesets/TerrainTileset/TerrainTileset.yy",},},
     {"id":{"name":"PogonaDeath","path":"sounds/PogonaDeath/PogonaDeath.yy",},},
+    {"id":{"name":"parFloat","path":"objects/parFloat/parFloat.yy",},},
     {"id":{"name":"__scribble_font_add_from_project","path":"scripts/__scribble_font_add_from_project/__scribble_font_add_from_project.yy",},},
     {"id":{"name":"__scribble_font_add_msdf_from_project","path":"scripts/__scribble_font_add_msdf_from_project/__scribble_font_add_msdf_from_project.yy",},},
     {"id":{"name":"input_mouse_check","path":"scripts/input_mouse_check/input_mouse_check.yy",},},
