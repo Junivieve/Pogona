@@ -542,6 +542,7 @@
     {"name":"grey_button09","order":76,"path":"sprites/grey_button09/grey_button09.yy",},
     {"name":"TerrainTileset","order":5,"path":"tilesets/TerrainTileset/TerrainTileset.yy",},
     {"name":"PogonaDeath","order":30,"path":"sounds/PogonaDeath/PogonaDeath.yy",},
+    {"name":"parFloat","order":34,"path":"objects/parFloat/parFloat.yy",},
     {"name":"__scribble_font_add_from_project","order":7,"path":"scripts/__scribble_font_add_from_project/__scribble_font_add_from_project.yy",},
     {"name":"__scribble_font_add_msdf_from_project","order":8,"path":"scripts/__scribble_font_add_msdf_from_project/__scribble_font_add_msdf_from_project.yy",},
     {"name":"input_mouse_check","order":5,"path":"scripts/input_mouse_check/input_mouse_check.yy",},
