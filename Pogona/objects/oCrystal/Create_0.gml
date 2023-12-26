@@ -1,2 +1,2 @@
-partTime = 0.05;
+partTime = 0.1;
 on = false;
