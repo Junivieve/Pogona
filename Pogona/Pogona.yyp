@@ -13,6 +13,7 @@
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Audio","folderPath":"folders/Audio.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particles","folderPath":"folders/Objects/Particles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Objects/Player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Objects/Player/Sounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Objects/Player/Sprites.yy",},
@@ -65,7 +66,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Water","folderPath":"folders/Sprites/Water.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tilesets","folderPath":"folders/Tilesets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"WTF","folderPath":"folders/WTF.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particles","folderPath":"folders/Objects/Particles.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"climb_tutorial.mp4","CopyToMask":-1,"filePath":"datafiles",},

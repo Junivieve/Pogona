@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Objects","order":3,"path":"folders/Objects.yy",},
+    {"name":"Particles","order":37,"path":"folders/Objects/Particles.yy",},
     {"name":"Player","order":12,"path":"folders/Objects/Player.yy",},
     {"name":"Sounds","order":1,"path":"folders/Objects/Player/Sounds.yy",},
     {"name":"Sprites","order":2,"path":"folders/Objects/Player/Sprites.yy",},
@@ -52,7 +53,6 @@
     {"name":"Water","order":66,"path":"folders/Sprites/Water.yy",},
     {"name":"Tilesets","order":5,"path":"folders/Tilesets.yy",},
     {"name":"WTF","order":7,"path":"folders/WTF.yy",},
-    {"name":"Particles","order":37,"path":"folders/Objects/Particles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"red_sliderRight","order":122,"path":"sprites/red_sliderRight/red_sliderRight.yy",},
