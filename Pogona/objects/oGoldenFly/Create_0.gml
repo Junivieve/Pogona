@@ -1,3 +1,4 @@
+event_inherited()
 // Create the particle system
 depth = 1;
 particleSystem = part_system_create_layer("Partfront",1);
