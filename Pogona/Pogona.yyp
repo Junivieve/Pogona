@@ -552,6 +552,7 @@
     {"id":{"name":"input_value","path":"scripts/input_value/input_value.yy",},},
     {"id":{"name":"input_gamepad_get_description","path":"scripts/input_gamepad_get_description/input_gamepad_get_description.yy",},},
     {"id":{"name":"oScalePlatformSpawn","path":"objects/oScalePlatformSpawn/oScalePlatformSpawn.yy",},},
+    {"id":{"name":"sStarburst","path":"sprites/sStarburst/sStarburst.yy",},},
     {"id":{"name":"yellow_cross","path":"sprites/yellow_cross/yellow_cross.yy",},},
     {"id":{"name":"sScalePlatform2","path":"sprites/sScalePlatform2/sScalePlatform2.yy",},},
     {"id":{"name":"sBackgroundTiles","path":"sprites/sBackgroundTiles/sBackgroundTiles.yy",},},
