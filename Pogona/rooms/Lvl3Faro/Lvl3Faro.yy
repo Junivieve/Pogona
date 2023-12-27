@@ -882,7 +882,6 @@
     {"name":"inst_144E077E","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_468F6107","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
     {"name":"inst_1096491D","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
-    {"name":"inst_35C48EED","path":"rooms/Lvl3Faro/Lvl3Faro.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -1008,7 +1007,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47A5591E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFrog","path":"objects/oFrog/oFrog.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":944.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_37CD319C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCrystal","path":"objects/oCrystal/oCrystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1675.0,"y":1099.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1096491D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oScaleCollectable","path":"objects/oScaleCollectable/oScaleCollectable.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3392.0,"y":1104.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35C48EED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGoldenFly","path":"objects/oGoldenFly/oGoldenFly.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":240.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Text","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":400,"effectEnabled":true,"effectType":"_filter_vignette","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[

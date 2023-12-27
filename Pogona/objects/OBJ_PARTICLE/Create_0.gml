@@ -1,4 +1,4 @@
-/// @desc Initialize Particle Variables.
+ /// @desc Initialize Particle Variables.
 Hsp = 0;
 Vsp = 0;
 Dir = 0;
