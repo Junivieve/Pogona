@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "mb_1.wav",
   "type": 0,
-  "volume": 0.3,
+  "volume": 0.6,
 }
