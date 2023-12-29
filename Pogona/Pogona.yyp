@@ -163,7 +163,7 @@
     {"id":{"name":"green_button05","path":"sprites/green_button05/green_button05.yy",},},
     {"id":{"name":"green_button08","path":"sprites/green_button08/green_button08.yy",},},
     {"id":{"name":"Jump","path":"sprites/Jump/Jump.yy",},},
-    {"id":{"name":"pGrass","path":"objects/pGrass/pGrass.yy",},},
+    {"id":{"name":"oGrassSmall","path":"objects/oGrassSmall/oGrassSmall.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"Lvl3FaroBeta","path":"rooms/Lvl3FaroBeta/Lvl3FaroBeta.yy",},},
     {"id":{"name":"sClimbItem","path":"sprites/sClimbItem/sClimbItem.yy",},},
