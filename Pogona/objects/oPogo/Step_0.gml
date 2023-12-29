@@ -167,23 +167,23 @@ if state=STATE_FALL{//falling
 		else{if(dashes>0 && hasDash){stateSet(STATE_DASH)}}//we dash
 		
 	}
-	
-		
-	// Moving Platform collision
-var _movingPlatform = instance_place(x, y + max(1, vspd), oMovingPlatformSmall);
-if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_top) {
-	//Pixel perfect collisions
-	if (vspd > 0) {
-		while (!place_meeting(x, y + sign(vspd), oMovingPlatformSmall)) {
-			y += sign(vspd);
-		}
-		vspd = 0;
-	}
+
+}
+
+if state=STATE_MOVING_WITH_PLATFORM {
+	vspd = 0;
+	spriteSet(spriteIdle);
+	var _movingPlatform = instance_place(x, y + max(1, vspd), oMovingPlatformSmall);
+	if(_movingPlatform == noone) { stateSet(STATE_FALL)}
 	// Add velocity
 	x += _movingPlatform.hspd;
 	y += _movingPlatform.vspd;
-}
-
+	
+	if abs(inputSides())>0{stateSet(STATE_WALK)}//player is holding left or right, switch to walk state
+	
+	if inputAction(){stateSet(STATE_JUMP)}//player pressed jump
+	
+	if vspd>0{stateSet(STATE_FALL)}//falling off a ledge
 }
 
 if state=STATE_JUMP{//jumping
@@ -251,7 +251,7 @@ if state=STATE_WALLSLIDE{//wall slide
 }
 	
 if state=STATE_DASH{//dash
-	with(CreateParticle(x - 16 * image_xscale, y, "Instances", OBJ_PARTICLE, sPogo_dash_12fps, image_xscale == 1 ? 0 : 180, 0.2, 0.4, 1, c_blue, true)) {
+	with(CreateParticle(x - 16 * image_xscale, y, "Instances", OBJ_PARTICLE, sDustParticle, image_xscale == 1 ? 0 : 180, 0.2, 0.4, 1, c_blue, true)) {
 		image_alpha = 0.4;
 		image_xscale = oPogo.image_xscale;
 	}
