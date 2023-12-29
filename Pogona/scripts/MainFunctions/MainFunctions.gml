@@ -12,6 +12,7 @@
 #macro STATE_DUCK 9
 #macro STATE_SHOOT 10
 #macro STATE_EGG 11
+#macro STATE_MOVING_WITH_PLATFORM 12
 #endregion
 
 function stateSet(_state){//simple state machine handler
@@ -91,6 +92,18 @@ function pixelMovement(h,v){//pixel perfect movement
 	        }
 	    }
 	}else{y+=v}
+	
+		// Moving Platform collision
+	var _movingPlatform = instance_place(x, y + max(1, vspd), oMovingPlatformSmall);
+	if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_top) {
+		//Pixel perfect collisions
+		if (vspd > 0) {
+			while (!place_meeting(x, y + sign(vspd), oMovingPlatformSmall)) {
+				y += sign(vspd);
+			}
+			stateSet(STATE_MOVING_WITH_PLATFORM);
+		}
+	}
 }
 	
 function setSpritesFromDash(){//set the players sprites based on dashes
