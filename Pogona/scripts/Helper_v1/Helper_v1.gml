@@ -1152,7 +1152,8 @@ function easy_tween() {
 #endregion
 #region Particle System
 function CreateParticle(_x,_y,_layer,_particle_object, _sprite,_dir,_spd,_length,_scale,_color,_end_on_anim){
-	with(instance_create_layer(_x,_y,_layer,_particle_object))
+	var _p = instance_create_layer(_x,_y,_layer,_particle_object);
+	with(_p)
 	{
 		Spd = _spd
 		Dir = _dir
@@ -1164,7 +1165,7 @@ function CreateParticle(_x,_y,_layer,_particle_object, _sprite,_dir,_spd,_length
 		image_blend = _color
 		
 	}
-	
+	return _p;
 }
 #endregion
 #region Better String

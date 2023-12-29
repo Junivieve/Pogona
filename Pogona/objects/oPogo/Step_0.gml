@@ -234,6 +234,10 @@ if state=STATE_WALLSLIDE{//wall slide
 }
 	
 if state=STATE_DASH{//dash
+	with(CreateParticle(x - 16 * image_xscale, y, "Instances", OBJ_PARTICLE, sPogo_dash_12fps, image_xscale == 1 ? 0 : 180, 0.2, 0.4, 1, c_blue, true)) {
+		image_alpha = 0.4;
+		image_xscale = oPogo.image_xscale;
+	}
 	spriteSet(spriteDash)//sprite
 	
 	if stateTimer=0{
