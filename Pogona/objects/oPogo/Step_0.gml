@@ -251,7 +251,7 @@ if state=STATE_WALLSLIDE{//wall slide
 }
 	
 if state=STATE_DASH{//dash
-	with(CreateParticle(x - 16 * image_xscale, y, "Instances", OBJ_PARTICLE, sDustParticle, image_xscale == 1 ? 0 : 180, 0.2, 0.4, 1, c_blue, true)) {
+	with(CreateParticle(x - 16 * image_xscale, y, "Instances", OBJ_PARTICLE, sDustParticle, image_xscale == 1 ? 0 : 180, 0.2, 0.4, 1, make_color_rgb(255, 255, 255), true)) {
 		image_alpha = 0.4;
 		image_xscale = oPogo.image_xscale;
 	}
