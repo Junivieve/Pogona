@@ -178,7 +178,6 @@ if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_top) {
 			y += sign(vspd);
 		}
 		vspd = 0;
-		_grounded = true;
 	}
 	// Add velocity
 	x += _movingPlatform.hspd;
