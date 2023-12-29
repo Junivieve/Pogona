@@ -1,5 +1,5 @@
 var _targetAngle = 0;
-var _stiff = 1/160;
+var _stiff = 1/80;
 var _damp = 1/20;
 var _displace = (_targetAngle-image_angle);
 swaySpeed += (_stiff * _displace);
@@ -8,7 +8,7 @@ image_angle += swaySpeed;
 
 // simulate wind
 var _windDir = -1;
-var _gustInt = 60;
+var _gustInt = 150;
 if((x+timer) mod _gustInt == 0) {
 	var _rand = random_range(-swapAmp, swapAmp);
 	swaySpeed += _windDir + _rand;
