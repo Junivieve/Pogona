@@ -1,5 +1,5 @@
-partTime -= 0.01 * global.gameTime;
-if(partTime <= 0) {
-	CreateParticle(x, y, "PartBack", OBJ_PARTICLE, particle_strip5, irandom(360), 1.2, 26, 1, c_white, false);
-	partTime = 0.05;
-}
+event_inherited();
+// Emit particles from a region that's twice as large
+part_emitter_region(ps, pe, x-8, x+8, y-8, y+8, ps_shape_ellipse, ps_distr_linear);
+part_emitter_burst(ps, pe, _p, 1); // Emit 1 particles
+part_emitter_interval(ps, pe, 10, 20, time_source_units_seconds);

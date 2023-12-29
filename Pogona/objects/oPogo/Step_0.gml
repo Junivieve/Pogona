@@ -167,6 +167,23 @@ if state=STATE_FALL{//falling
 		else{if(dashes>0 && hasDash){stateSet(STATE_DASH)}}//we dash
 		
 	}
+	
+		
+	// Moving Platform collision
+var _movingPlatform = instance_place(x, y + max(1, vspd), oMovingPlatformSmall);
+if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_top) {
+	//Pixel perfect collisions
+	if (vspd > 0) {
+		while (!place_meeting(x, y + sign(vspd), oMovingPlatformSmall)) {
+			y += sign(vspd);
+		}
+		vspd = 0;
+	}
+	// Add velocity
+	x += _movingPlatform.hspd;
+	y += _movingPlatform.vspd;
+}
+
 }
 
 if state=STATE_JUMP{//jumping
@@ -353,3 +370,6 @@ if(iframe > 0) {
 } else {
 	iframe = 0;	
 }
+
+
+		
