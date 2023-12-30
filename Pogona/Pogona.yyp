@@ -351,6 +351,7 @@
     {"id":{"name":"input_value_is_binding","path":"scripts/input_value_is_binding/input_value_is_binding.yy",},},
     {"id":{"name":"__input_class_verb","path":"scripts/__input_class_verb/__input_class_verb.yy",},},
     {"id":{"name":"__input_load_type_csv","path":"scripts/__input_load_type_csv/__input_load_type_csv.yy",},},
+    {"id":{"name":"sDragonDash","path":"sprites/sDragonDash/sDragonDash.yy",},},
     {"id":{"name":"grey_checkmarkWhite","path":"sprites/grey_checkmarkWhite/grey_checkmarkWhite.yy",},},
     {"id":{"name":"scribble_anim_reset","path":"scripts/scribble_anim_reset/scribble_anim_reset.yy",},},
     {"id":{"name":"tWaterWaterfall2","path":"tilesets/tWaterWaterfall2/tWaterWaterfall2.yy",},},

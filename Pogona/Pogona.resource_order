@@ -308,6 +308,7 @@
     {"name":"oPlayer","order":1,"path":"objects/oPlayer/oPlayer.yy",},
     {"name":"__input_class_verb","order":21,"path":"scripts/__input_class_verb/__input_class_verb.yy",},
     {"name":"__input_load_type_csv","order":4,"path":"scripts/__input_load_type_csv/__input_load_type_csv.yy",},
+    {"name":"sDragonDash","order":70,"path":"sprites/sDragonDash/sDragonDash.yy",},
     {"name":"grey_checkmarkWhite","order":84,"path":"sprites/grey_checkmarkWhite/grey_checkmarkWhite.yy",},
     {"name":"scribble_anim_reset","order":5,"path":"scripts/scribble_anim_reset/scribble_anim_reset.yy",},
     {"name":"tWaterWaterfall2","order":12,"path":"tilesets/tWaterWaterfall2/tWaterWaterfall2.yy",},
