@@ -53,6 +53,7 @@
     {"name":"Water","order":64,"path":"folders/Sprites/Water.yy",},
     {"name":"Tilesets","order":5,"path":"folders/Tilesets.yy",},
     {"name":"WTF","order":7,"path":"folders/WTF.yy",},
+    {"name":"Shaders","order":37,"path":"folders/Shaders.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"red_sliderRight","order":122,"path":"sprites/red_sliderRight/red_sliderRight.yy",},
@@ -411,6 +412,7 @@
     {"name":"input_gamepad_get_type","order":3,"path":"scripts/input_gamepad_get_type/input_gamepad_get_type.yy",},
     {"name":"__scribble_get_anim_properties","order":1,"path":"scripts/__scribble_get_anim_properties/__scribble_get_anim_properties.yy",},
     {"name":"scribble_flush_everything","order":1,"path":"scripts/scribble_flush_everything/scribble_flush_everything.yy",},
+    {"name":"oWaterBody","order":39,"path":"objects/oWaterBody/oWaterBody.yy",},
     {"name":"red_button00","order":102,"path":"sprites/red_button00/red_button00.yy",},
     {"name":"input_is_analogue","order":1,"path":"scripts/input_is_analogue/input_is_analogue.yy",},
     {"name":"grey_boxCross","order":65,"path":"sprites/grey_boxCross/grey_boxCross.yy",},
@@ -599,6 +601,7 @@
     {"name":"red_circle","order":117,"path":"sprites/red_circle/red_circle.yy",},
     {"name":"sSparkticle","order":10,"path":"sprites/sSparkticle/sSparkticle.yy",},
     {"name":"input_default_key","order":3,"path":"scripts/input_default_key/input_default_key.yy",},
+    {"name":"sWater","order":71,"path":"sprites/sWater/sWater.yy",},
     {"name":"red_boxCross","order":100,"path":"sprites/red_boxCross/red_boxCross.yy",},
     {"name":"green_button11","order":47,"path":"sprites/green_button11/green_button11.yy",},
     {"name":"sCollectablescale","order":57,"path":"sprites/sCollectablescale/sCollectablescale.yy",},
