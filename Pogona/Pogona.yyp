@@ -61,12 +61,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SHADERS","folderPath":"folders/PLUTOH/SHADERS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UTILITY","folderPath":"folders/PLUTOH/UTILITY.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lava","folderPath":"folders/Sprites/Lava.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Water","folderPath":"folders/Sprites/Water.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tilesets","folderPath":"folders/Tilesets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"WTF","folderPath":"folders/WTF.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"climb_tutorial.mp4","CopyToMask":-1,"filePath":"datafiles",},
@@ -81,7 +81,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"red_sliderRight","path":"sprites/red_sliderRight/red_sliderRight.yy",},},

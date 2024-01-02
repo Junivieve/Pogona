@@ -1,7 +1,4 @@
 global.gameTime = ((60/1000000) * delta_time);
-if(room != rm_menu) {
-	global.timer += 0.01 * global.gameTime;
-}
 
 if(keyboard_check_pressed(vk_f5)) {
 	var _fs = window_get_fullscreen();

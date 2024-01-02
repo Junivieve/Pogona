@@ -48,12 +48,12 @@
     {"name":"SHADERS","order":2,"path":"folders/PLUTOH/SHADERS.yy",},
     {"name":"UTILITY","order":1,"path":"folders/PLUTOH/UTILITY.yy",},
     {"name":"Rooms","order":8,"path":"folders/Rooms.yy",},
+    {"name":"Shaders","order":37,"path":"folders/Shaders.yy",},
     {"name":"Sprites","order":6,"path":"folders/Sprites.yy",},
     {"name":"Lava","order":63,"path":"folders/Sprites/Lava.yy",},
     {"name":"Water","order":64,"path":"folders/Sprites/Water.yy",},
     {"name":"Tilesets","order":5,"path":"folders/Tilesets.yy",},
     {"name":"WTF","order":7,"path":"folders/WTF.yy",},
-    {"name":"Shaders","order":37,"path":"folders/Shaders.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"red_sliderRight","order":122,"path":"sprites/red_sliderRight/red_sliderRight.yy",},

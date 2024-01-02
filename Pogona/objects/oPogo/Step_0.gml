@@ -40,12 +40,6 @@ if state=STATE_DEAD{//dead
 	spriteSet(spriteDead)
 	audio_stop_sound(PogonaTheme);
 	
-	if(array_length(oController.hearts) > 0) {
-		show_debug_message(oController.hearts[array_length(oController.hearts)-1]);
-		oController.hearts[array_length(oController.hearts)-1].destroy();
-		array_pop(oController.hearts);
-	}
-	
 	if(!audio_is_playing(PogonaDeath)) {
 		if(checkpoint == noone) {
 		x = oPogo.xstart;
@@ -69,7 +63,6 @@ if state=STATE_DEAD{//dead
 		state = STATE_IDLE;
 		image_speed = 1;
 		hp = hpmax;
-		oController.addhearts();
 	}
 	//if stateTimer=1{sleep(250)}//first frame of death, we pause the game for 1/4 second
 	//set the sprite
@@ -303,12 +296,6 @@ if state=STATE_HURT{//hurt
 	spriteSet(spriteHurt)//sprite
 	//i did not really end up using this state for anythin
 	state = STATE_IDLE;
-	
-	if(array_length(oController.hearts) > 0) {
-		show_debug_message(oController.hearts[array_length(oController.hearts)-1]);
-		oController.hearts[array_length(oController.hearts)-1].destroy();
-		array_pop(oController.hearts);
-	}
 }
 
 if state=STATE_DUCK{//ducking
@@ -327,7 +314,6 @@ if state = STATE_SHOOT {
 		_scale.dir = sign(image_xscale);
 		scales --;	
 		if(!shot) {
-			oController.scales[scales].setImageAlpha(0.5);
 			shot = true;
 		}
 		canshoot = false;
