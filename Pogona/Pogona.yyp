@@ -403,6 +403,7 @@
     {"id":{"name":"grey_button07","path":"sprites/grey_button07/grey_button07.yy",},},
     {"id":{"name":"sPogo_crouch_8fps","path":"sprites/sPogo_crouch_8fps/sPogo_crouch_8fps.yy",},},
     {"id":{"name":"red_button09","path":"sprites/red_button09/red_button09.yy",},},
+    {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},
     {"id":{"name":"input_gamepad_check","path":"scripts/input_gamepad_check/input_gamepad_check.yy",},},
     {"id":{"name":"__scribble_gen_2_parser","path":"scripts/__scribble_gen_2_parser/__scribble_gen_2_parser.yy",},},
     {"id":{"name":"sndWalk1","path":"sounds/sndWalk1/sndWalk1.yy",},},

@@ -357,5 +357,13 @@ if(iframe > 0) {
 	iframe = 0;	
 }
 
+if(keyboard_check_pressed(vk_escape)) {
+	if(instance_exists(oPause)) {
+		instance_destroy(oPause);	
+	} else {
+		instance_create_layer(0, 0, "Instances", oPause);	
+	}
+}
+
 
 		

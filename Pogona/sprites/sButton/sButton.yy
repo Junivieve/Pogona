@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "Pogona",
-    "path": "Pogona.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
