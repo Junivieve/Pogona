@@ -61,6 +61,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SHADERS","folderPath":"folders/PLUTOH/SHADERS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UTILITY","folderPath":"folders/PLUTOH/UTILITY.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Caves","folderPath":"folders/Rooms/Caves.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lava","folderPath":"folders/Sprites/Lava.yy",},
@@ -592,6 +593,7 @@
     {"id":{"name":"input_check_repeat","path":"scripts/input_check_repeat/input_check_repeat.yy",},},
     {"id":{"name":"__scribble_class_typist","path":"scripts/__scribble_class_typist/__scribble_class_typist.yy",},},
     {"id":{"name":"input_keyboard_check","path":"scripts/input_keyboard_check/input_keyboard_check.yy",},},
+    {"id":{"name":"rCaves00","path":"rooms/rCaves00/rCaves00.yy",},},
     {"id":{"name":"sRedFrogAttack","path":"sprites/sRedFrogAttack/sRedFrogAttack.yy",},},
     {"id":{"name":"sBossHealthBarName","path":"sprites/sBossHealthBarName/sBossHealthBarName.yy",},},
     {"id":{"name":"input_binding_get_collisions","path":"scripts/input_binding_get_collisions/input_binding_get_collisions.yy",},},
@@ -746,6 +748,7 @@
     {"id":{"name":"sScale","path":"sprites/sScale/sScale.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rCaves00","path":"rooms/rCaves00/rCaves00.yy",},},
     {"roomId":{"name":"Lvl4Faro","path":"rooms/Lvl4Faro/Lvl4Faro.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},

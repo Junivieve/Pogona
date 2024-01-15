@@ -48,6 +48,7 @@
     {"name":"SHADERS","order":2,"path":"folders/PLUTOH/SHADERS.yy",},
     {"name":"UTILITY","order":1,"path":"folders/PLUTOH/UTILITY.yy",},
     {"name":"Rooms","order":8,"path":"folders/Rooms.yy",},
+    {"name":"Caves","order":11,"path":"folders/Rooms/Caves.yy",},
     {"name":"Shaders","order":37,"path":"folders/Shaders.yy",},
     {"name":"Sprites","order":6,"path":"folders/Sprites.yy",},
     {"name":"Lava","order":63,"path":"folders/Sprites/Lava.yy",},
