@@ -1,3 +1,1 @@
-if(target != 0) {
-	room_goto(target);	
-}
+room_goto(target);	
