@@ -35,5 +35,5 @@
     "path": "sprites/sTravelZone/sTravelZone.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
