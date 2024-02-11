@@ -38,7 +38,7 @@ if(place_meeting(x, y, oSuperFrog)) {
 }
 if(place_meeting(x+dir, y, oBox)) {
 	var _box = instance_place(x+dir, y, oBox);
-	var _sp = dir == -1 ? 14 : -16;
+	var _sp = dir == -1 ? 14 : -21; 
 	var _p = instance_create_layer(_box.x + _sp, y, "Instances", oScalePlatformSpawn);
 	_p.image_xscale = dir;
 	audio_play_sound(mScaleHitWall, 1, false);

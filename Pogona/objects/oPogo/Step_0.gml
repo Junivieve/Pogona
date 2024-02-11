@@ -30,6 +30,7 @@ setSpritesFromDash()//update our sprites based on how many dashes we have left
 //STATE MACHINE
 #region state machine
 if state=STATE_EGG{
+	state = STATE_IDLE;	
 	spriteSet(sDragonEggHatch);	
 	if(image_index >= image_number-1) {
 		state = STATE_IDLE;	
