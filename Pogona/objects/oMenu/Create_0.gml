@@ -11,7 +11,7 @@ startbutton = menu.add(new UIButton("startButton", 30, 8, 60, 30, "Start", sButt
 	startbutton.setDraggable(false);
 	startbutton.setTextFormat("[#eeaf8a]");
 	startbutton.setCallback(UI_EVENT.LEFT_RELEASE, function() {
-		room_goto(Lvl3Faro);
+		room_goto(Lvl4Faro);
 		var _m = startbutton.getParent();
 		audio_stop_sound(PogonaMenu);
 		_m.destroy();
