@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sndPowerup2.ogg",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.53,
 }

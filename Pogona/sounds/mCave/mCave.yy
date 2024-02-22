@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "mCave.wav",
   "type": 2,
-  "volume": 0.05,
+  "volume": 0.07,
 }

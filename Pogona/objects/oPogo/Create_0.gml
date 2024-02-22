@@ -54,4 +54,17 @@ if(!audio_is_playing(mGameOn)) {
 if(!audio_is_playing(PogonaTheme)) {
 	audio_play_sound(PogonaTheme, 1, true);
 }
-
+gotoLevel = room_get_name(room);
+completedGame = false;
+Load = function()
+{
+    static _config = ssave_get(ssave_config_savefile);
+    global.timer = _config.get("timer");
+	completedGame = _config.get("completed");
+	gotoLevel = _config.get("level");
+	hasClimb = _config.get("hasClimb");
+    hasDash = _config.get("hasDash");
+	hasShoot = _config.get("hasShoot");
+    scales = _config.get("numberOfScales");
+}
+Load();
